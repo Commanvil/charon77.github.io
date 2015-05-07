@@ -1,4 +1,0 @@
-Hello World!
-<?php
-phpversion();
-?>
