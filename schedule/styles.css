@@ -1,0 +1,164 @@
+body {
+	font-family: tahoma;
+	color: rgba(255, 255, 255, 0.92);
+	display: grid;
+	background-color: hsl(0,0%,23%);
+	margin: 20px;
+}
+
+header {
+	grid-area: hd;
+	background-color: hsl(35,90%,60%);	
+	border-radius: 10px;
+	padding: 10pt;
+}
+
+section {
+	grid-area: mn;
+}
+
+footer {
+	grid-area: ft;
+	background-color: teal;
+	border-radius: 10px;
+	padding: 10pt;
+}
+
+body {
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: auto;
+	grid-template-areas:
+	  "hd hd hd hd"
+	  "mn mn mn mn"
+	  "ft ft ft ft";
+}
+
+@media screen and (min-width: 900px) {
+	body {
+	  grid-template-areas:
+	    "hd mn mn mn"
+	    "hd mn mn mn"
+	    "ft mn mn mn";
+	  margin: 80px;
+	}
+}
+
+table {
+  display: grid;	
+  grid-gap: 10px;
+  
+}
+
+tr {
+	display: grid;
+	grid-gap: 10px;
+	
+	border-radius: 10px;
+	margin: 5px;
+	background-color: hsl(35,90%,60%);	
+	
+	grid-template-columns: repeat(5, 1fr);	
+	grid-template-areas:
+	"day day day day day"
+	"pg pg pg pg pg"
+	"sg sg sg sg sg";
+	
+}
+@media screen and (min-width: 900px) {
+    tr {
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-areas:
+          "day pg pg sg sg"
+          "day pg pg sg sg"
+          "day pg pg sg sg";
+	}
+}
+
+
+
+
+td {
+	padding: 15px;
+	padding-bottom: 10px;
+}
+
+ol {
+	margin: 0px;
+}
+
+ul {
+	margin: 0px;
+}
+
+.day{
+	/*background-color: blue;*/
+	background-color: rgba(255,255,255,0.4);
+	grid-area: day;
+	font-family: tahoma;
+	font-weight: 600;
+	font-size: 18pt;
+	color: rgba(255, 255, 255, 0.8);
+	vertical-align: middle;
+}
+
+.pg{
+	background-color: hsla(211, 80%, 60%, 0.7);
+	grid-area: pg;
+}
+.sg{
+	background-color: hsla(302, 50%, 50%, 0.7);
+	grid-area: sg;
+}
+
+@media screen and (min-width: 900px)
+{
+	.sg {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.day {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 900px)
+{
+	.sg{
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.day{
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+}
+
+a {
+	color: inherit;
+	
+}
+
+.time{
+	float:right;
+	color: hsl(188,100%,80%);
+}
+.subject {
+	
+}
+
+nav > a {
+	font-weight: bold;
+	font-size: large;
+}
+
+.notes {
+	float: right;
+	margin-top: 10pt;
+}
+.notes::before{
+	content: "Notes:";
+	font-weight: bold;
+}
