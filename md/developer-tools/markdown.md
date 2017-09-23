@@ -26,7 +26,7 @@ not much. This is so unlike html files.
 
 A normal html files would look like this:
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>

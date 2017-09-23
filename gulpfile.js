@@ -28,7 +28,11 @@ gulp.task('md', function(){
     pedantic: false,
     sanitize: false,
     smartLists: true,
-    smartypants: true
+    smartypants: true,
+    highlight: function (code, lang, callback) {
+    require('pygmentize-bundled')({ lang: lang, format: 'html' }, code, function (err, result) {
+      callback(err, result.toString());
+    })}
   }
   
   return gulp.src('md/**/*.md')
