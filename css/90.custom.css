@@ -18,6 +18,11 @@ p {
   text-align: justify;
 }
 
+b,
+strong {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 48rem)
 {
   body {

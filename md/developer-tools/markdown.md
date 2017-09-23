@@ -61,7 +61,7 @@ A typical html document would look like this:
 ```
 
 If you are familiar with html, you know immediately that what's really
-important is just the heading: __Markdown__, the sub-heading, `What is it?`, and
+important is just the heading: **`Markdown`**, the sub-heading, **`What is it?`**, and
 the body of the paragraph surrounded by `<p>...</p>`.
 
 While a typical markdown document looks like this.
