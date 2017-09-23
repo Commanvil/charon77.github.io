@@ -48,16 +48,74 @@ that are not content, but have to be there in order to have <em>nice display</em
 <p>If you are familiar with html, you know immediately that what’s really
 important is just the heading: <strong><code>Markdown</code></strong>, the sub-heading, <strong><code>What is it?</code></strong>, and
 the body of the paragraph surrounded by <code>&lt;p&gt;...&lt;/p&gt;</code>.</p>
-<p>While a typical markdown document looks like this.</p>
+<p>Now, let’s compare it to Markdown.</p>
+<p>A typical Markdown document looks like this.</p>
 <pre><code>Markdown
 ========
+
+Back to [Index](index.html#-markdown-markdown-html-)
 
 What is it?
 -----------
 
 Markdown files (.md) are documents that are easy to view, whether
-you view it on a browser (think: website) or using text editor.
-This means that you can open any markdown files with programs
-such as notepad, and still be able to read it easily, as opposed
-to reading (.html) files.
-</code></pre></body></html>
+you view it on a browser (like Firefox) or using text editor (like Notepad).
+This allows even visitors that uses ancient PCs for _surfing the web_ to access
+our website.
+</code></pre><h2 id="commonly-used-markdown">Commonly used Markdown</h2>
+<p>This section is based on <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">this</a> and <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">this(pdf)</a>, which are really useful
+for starters learning how to use Markdown for the first time.</p>
+<p>Other exhaustive Markdown resources are also available, ranging from 
+different flavors of Markdown, one of which being gfm (GitHub Flavored Markdown), etc.</p>
+<p>Here are some of the basic Markdown example to get started.</p>
+<h3 id="headings">Headings</h3>
+<p>Two main ways of writing headings.</p>
+<ol>
+<li><p>Using # followed by space before the heading.</p>
+<p><strong>Example:</strong></p>
+<pre><code># This is heading 1
+Some text.
+## Heading 2
+### Heading 3
+...
+###### Heading 6
+More text!
+</code></pre><p>Which yields to:</p>
+<blockquote>
+<h1 id="this-is-heading-1">This is heading 1</h1>
+<p>Some text.</p>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<p>…</p>
+<h6 id="heading-6">Heading 6</h6>
+<p>More text!</p>
+</blockquote>
+</li>
+<li><p>Using = or - at the <em>bottom</em> of the heading.</p>
+<p>Personally, I prefer this method as it looks clearer in plaintext.
+You can use this format <strong>only</strong> for Heading 1 and Heading 2. For
+levels below it, revert to the # format.</p>
+<p><strong>Example:</strong></p>
+<pre><code>Heading 1
+=========    
+Some text over here.
+
+Heading 2
+----------
+
+The quick brown fox jumps over the lazy dog.*
+------------
+
+*Note: in some parser, the line below the heading must not be shorter
+than the text. This demonstrates what happens when this is violated.
+Even though it appears well here, it&#39;s use is discouraged. Besides, it
+looks bad.
+</code></pre><blockquote>
+<h1 id="heading-1">Heading 1</h1>
+<p>Some text over here</p>
+<h2 id="the-quick-brown-fox-jumps-over-the-lazy-dog-">The quick brown fox jumps over the lazy dog.</h2>
+<h2 id="the-quick-brown-fox-jumps-over-the-lazy-dog-">The quick brown fox jumps over the lazy dog.</h2>
+</blockquote>
+</li>
+</ol>
+</body></html>
