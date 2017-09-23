@@ -13,14 +13,3 @@ h2,
 h3 {
   border-bottom: 2px solid #eaeaea;
 }
-
-/* Increases margin for headings */
-h4 {
-  padding-left: 1em;
-}
-h5 {
-  padding-left: 2em;
-}
-h6 {
-  padding-left: 3em;
-}
