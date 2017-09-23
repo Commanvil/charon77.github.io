@@ -1,11 +1,15 @@
 const gulp = require('gulp')
 const markdown = require('gulp-markdown');
 const wrapper = require('gulp-wrapper');
+const flatten = require('gulp-flatten');
 
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-minify-css')
 
 gulp.watch('md/**/*.md', ['md'])
+
+gulp.watch('css/**/*.css', ['css'])
+
 
 gulp.task('css', function(){
   return gulp.src('css/**/*.css')
@@ -27,7 +31,8 @@ gulp.task('md', function(){
     smartypants: true
   }
   
-  return gulp.src('md/*.md')
+  return gulp.src('md/**/*.md')
+    .pipe(flatten())
     .pipe(markdown(opts))
     .pipe(wrapper({
       header: '<html><head><link rel="stylesheet" href="style.min.css"/></head>',
