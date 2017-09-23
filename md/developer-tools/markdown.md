@@ -49,3 +49,18 @@ A normal html files would look like this:
   </body>
 </html>
 ```
+
+
+```
+Markdown
+========
+
+What is it?
+-----------
+
+Markdown files (.md) are documents that are easy to view, whether
+you view it on a browser (think: website) or using text editor.
+This means that you can open any markdown files with programs
+such as notepad, and still be able to read it easily, as opposed
+to reading (.html) files.
+```
