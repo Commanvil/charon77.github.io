@@ -35,7 +35,7 @@ gulp.task('md', function(){
     .pipe(flatten())
     .pipe(markdown(opts))
     .pipe(wrapper({
-      header: '<html><head><link rel="stylesheet" href="style.min.css"/></head>',
+      header: '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="style.min.css"/></head>',
       footer: '</html>\n'
       
     }))

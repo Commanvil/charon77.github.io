@@ -13,3 +13,10 @@ h2,
 h3 {
   border-bottom: 2px solid #eaeaea;
 }
+
+@media screen and (max-width: 48rem)
+{
+  body {
+    margin: 0 0.3em;
+  }
+}
