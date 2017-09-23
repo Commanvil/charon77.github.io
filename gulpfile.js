@@ -2,7 +2,18 @@ const gulp = require('gulp')
 const markdown = require('gulp-markdown');
 const wrapper = require('gulp-wrapper');
 
+const concat = require('gulp-concat')
+const minifyCSS = require('gulp-minify-css')
+
 gulp.watch('md/**/*.md', ['md'])
+
+gulp.task('css', function(){
+  return gulp.src('css/**/*.css')
+    .pipe(minifyCSS())
+    .pipe(concat('style.min.css'))
+    .pipe(gulp.dest('.'))
+  
+})
 
 gulp.task('md', function(){
   //const opts = {title: 'File $BASENAME in $DIRNAME', stylesheet: 'css/modest.css'};
@@ -13,13 +24,13 @@ gulp.task('md', function(){
     pedantic: false,
     sanitize: false,
     smartLists: true,
-    smartypants: false
+    smartypants: true
   }
   
   return gulp.src('md/*.md')
     .pipe(markdown(opts))
     .pipe(wrapper({
-      header: '<html><head><link rel="stylesheet" href="css/modest.css"/></head>',
+      header: '<html><head><link rel="stylesheet" href="style.min.css"/></head>',
       footer: '</html>\n'
       
     }))
@@ -27,4 +38,4 @@ gulp.task('md', function(){
 });
 
 
-gulp.task('default', [ 'md' ]);
+gulp.task('default', [ 'md', 'css' ]);
