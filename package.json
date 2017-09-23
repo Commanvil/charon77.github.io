@@ -1,0 +1,22 @@
+{
+  "name": "charon77.github.io",
+  "version": "1.0.0",
+  "description": "My journey of learning: a story I want to tell people about.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charon77/charon77.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Evans Jahja",
+  "license": "CC-BY-SA-3.0",
+  "bugs": {
+    "url": "https://github.com/Charon77/charon77.github.io/issues"
+  },
+  "homepage": "https://github.com/Charon77/charon77.github.io#readme"
+}
