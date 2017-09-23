@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/Charon77/charon77.github.io/issues"
   },
-  "homepage": "https://github.com/Charon77/charon77.github.io#readme"
+  "homepage": "https://github.com/Charon77/charon77.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-markdown": "^1.2.0"
+  },
+  "dependencies": {
+    "gulp-wrapper": "^1.0.0"
+  }
 }
