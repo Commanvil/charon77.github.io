@@ -30,9 +30,15 @@ gulp.task('md', function(){
     smartLists: true,
     smartypants: true,
     highlight: function (code, lang, callback) {
-    require('pygmentize-bundled')({ lang: lang, format: 'html' }, code, function (err, result) {
-      callback(err, result.toString());
-    })}
+      if (lang)
+      {
+        require('pygmentize-bundled')({ lang: lang, format: 'html' }, code, function (err, result) {
+          callback(err, result.toString());
+        })
+      } else {
+        callback(null, code)
+      }
+    }
   }
   
   return gulp.src('md/**/*.md')
