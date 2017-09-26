@@ -3,6 +3,11 @@ Markdown - Spend More Time on Writing, Not Formatting
 
 Back to [Index](index.html#-markdown-markdown-html-)
 
+Humans are always about writings, ever since historical times.
+Even in the current digital age, writings stay relevant on The Internet.
+In this section, we will cover a document format called Markdown, that
+is easy to write, looks nice in both browsers and text editors, and
+hassle-free.
 
 Motivation
 -----------
