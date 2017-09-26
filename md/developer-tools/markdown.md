@@ -7,8 +7,8 @@ Back to [Index](index.html#-markdown-markdown-html-)
 Motivation
 -----------
 
-Imagine writing website pages like how you normally would: a bunch of
-html, links here and there, css files spread all over. Then, maybe some
+Imagine writing website pages. How would you normally do it? A bunch of
+html, links here and there, css files spread all over. What if, maybe some
 point in live you decided to use frameworks, such as bootstrap. Things
 do not go well, when you have to edit pages after pages one by one, adding
 bootstrap css files to each header, assigning classes to `<div>` and what-not.
@@ -94,6 +94,35 @@ Other exhaustive Markdown resources are also available, ranging from
 different flavors of Markdown, one of which being gfm (GitHub Flavored Markdown), etc.
 
 Here are some of the basic Markdown example to get started.
+
+### Paragraphs
+A paragraph in Markdown are just text that spans multiple lines, separated by blank lines.
+This is useful, as paragraphs tend to be lengthy, and writing a single paragraphs
+on a single line would be confusing, especially in times when word-wrapping wasn't a thing.
+
+A new paragraph is inserted when you insert a blank line, followed by more text.
+To illustrate, let's take a look on these examples.
+
+```
+This section demonstrates paragraphs
+that are written
+across multiple lines. The quick brown fox jumps over the
+lazy dog. The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.
+
+This sentence sits on a new paragraph, because of the
+empty line that comes before it.
+```
+
+This will yield:
+> This section demonstrates paragraphs
+> that are written
+> across multiple lines.  The quick brown fox jumps over the
+> lazy dog. The quick brown fox jumps over the lazy dog.
+> The quick brown fox jumps over the lazy dog.
+
+> This sentence sits on a new paragraph, because of the
+> empty line that comes before it.
 
 ### Headings
 Two main ways of writing headings.

@@ -1,8 +1,8 @@
 <!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="style.min.css"/></head><body><h1 id="markdown-spend-more-time-on-writing-not-formatting">Markdown - Spend More Time on Writing, Not Formatting</h1>
 <p>Back to <a href="index.html#-markdown-markdown-html-">Index</a></p>
 <h2 id="motivation">Motivation</h2>
-<p>Imagine writing website pages like how you normally would: a bunch of
-html, links here and there, css files spread all over. Then, maybe some
+<p>Imagine writing website pages. How would you normally do it? A bunch of
+html, links here and there, css files spread all over. What if, maybe some
 point in live you decided to use frameworks, such as bootstrap. Things
 do not go well, when you have to edit pages after pages one by one, adding
 bootstrap css files to each header, assigning classes to <code>&lt;div&gt;</code> and what-not.</p>
@@ -69,6 +69,30 @@ for starters learning how to use Markdown for the first time.</p>
 <p>Other exhaustive Markdown resources are also available, ranging from 
 different flavors of Markdown, one of which being gfm (GitHub Flavored Markdown), etc.</p>
 <p>Here are some of the basic Markdown example to get started.</p>
+<h3 id="paragraphs">Paragraphs</h3>
+<p>A paragraph in Markdown are just text that spans multiple lines, separated by blank lines.
+This is useful, as paragraphs tend to be lengthy, and writing a single paragraphs
+on a single line would be confusing, especially in times when word-wrapping wasn’t a thing.</p>
+<p>A new paragraph is inserted when you insert a blank line, followed by more text.
+To illustrate, let’s take a look on these examples.</p>
+<pre><code>This section demonstrates paragraphs
+that are written
+across multiple lines. The quick brown fox jumps over the
+lazy dog. The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.
+
+This sentence sits on a new paragraph, because of the
+empty line that comes before it.
+</code></pre><p>This will yield:</p>
+<blockquote>
+<p>This section demonstrates paragraphs
+that are written
+across multiple lines.  The quick brown fox jumps over the
+lazy dog. The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.</p>
+<p>This sentence sits on a new paragraph, because of the
+empty line that comes before it.</p>
+</blockquote>
 <h3 id="headings">Headings</h3>
 <p>Two main ways of writing headings.</p>
 <ol>
