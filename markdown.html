@@ -83,7 +83,7 @@ The quick brown fox jumps over the lazy dog.
 
 This sentence sits on a new paragraph, because of the
 empty line that comes before it.
-</code></pre><p>This will yield:</p>
+</code></pre><p><strong>This will yield:</strong></p>
 <blockquote>
 <p>This section demonstrates paragraphs
 that are written
@@ -105,7 +105,7 @@ Some text.
 ...
 ###### Heading 6
 More text!
-</code></pre><p>Which yields to:</p>
+</code></pre><p><strong>Which yields to:</strong></p>
 <blockquote>
 <h1 id="this-is-heading-1">This is heading 1</h1>
 <p>Some text.</p>
@@ -135,7 +135,8 @@ The quick brown fox jumps over the lazy dog.*
 than the text. This demonstrates what happens when this is violated.
 Even though it appears well here, it&#39;s use is discouraged. Besides, it
 looks bad.
-</code></pre><blockquote>
+</code></pre><p><strong>Result:</strong></p>
+<blockquote>
 <h1 id="heading-1">Heading 1</h1>
 <p>Some text over here</p>
 <h2 id="the-quick-brown-fox-jumps-over-the-lazy-dog-">The quick brown fox jumps over the lazy dog.</h2>
@@ -143,4 +144,44 @@ looks bad.
 </blockquote>
 </li>
 </ol>
+<h3 id="blockquote">Blockquote</h3>
+<p>A blockquote can be added, usually to indicate a group of text,
+typically to quote someone else. This can be done by 
+putting the symbol <code>&gt;</code> before the start of line.</p>
+<p><strong>Example:</strong></p>
+<pre><code>This is a normal line.
+
+&gt; This is a single line followed by &gt;.
+
+&gt; This paragraph spans
+&gt; multiple lines.
+</code></pre><p><strong>Result:</strong></p>
+<blockquote>
+<p>This is a normal line.</p>
+<blockquote>
+<p>This is a single line followed by &gt;.</p>
+<p>This paragraph spans
+multiple lines.</p>
+</blockquote>
+</blockquote>
+<h3 id="code-highlighting">Code Highlighting</h3>
+<p>Putting codes inside Markdown is as easy as this:</p>
+<p><strong>Example:</strong></p>
+<pre><code>```html
+&lt;body&gt;
+  &lt;p class=&quot;caption&quot;&gt;Hello&lt;/p&gt;
+&lt;/body&gt;
+```
+</code></pre><p><strong>Result:</strong></p>
+<pre><code class="lang-html"><div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
+ <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;caption&quot;</span><span class="nt">&gt;</span>Hello<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></div>
+
+</code></pre>
+<p>The support for which languages are supported and which are not depends
+on the highlighting engine that is being used. The engine contains a
+lexer that turns supported codes into other formats, for example html,
+that can be shown in the browser, after being coupled with appropriate
+css.</p>
 </body></html>

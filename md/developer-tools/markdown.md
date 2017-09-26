@@ -114,7 +114,7 @@ This sentence sits on a new paragraph, because of the
 empty line that comes before it.
 ```
 
-This will yield:
+**This will yield:**
 > This section demonstrates paragraphs
 > that are written
 > across multiple lines.  The quick brown fox jumps over the
@@ -139,7 +139,7 @@ Two main ways of writing headings.
     More text!
     ```
     
-    Which yields to:
+    **Which yields to:**
     
     > # This is heading 1
     > Some text.
@@ -172,7 +172,7 @@ Two main ways of writing headings.
     Even though it appears well here, it's use is discouraged. Besides, it
     looks bad.
     ```
-    
+    **Result:**
     > Heading 1
     > =========    
     > Some text over here
@@ -182,6 +182,58 @@ Two main ways of writing headings.
     > 
     > The quick brown fox jumps over the lazy dog.
     > ------------
+
+### Blockquote
+
+A blockquote can be added, usually to indicate a group of text,
+typically to quote someone else. This can be done by 
+putting the symbol `>` before the start of line.
+
+**Example:**
+
+```
+This is a normal line.
+
+> This is a single line followed by >.
+
+> This paragraph spans
+> multiple lines.
+```
+
+**Result:**
+> This is a normal line.
+
+> > This is a single line followed by >.
+
+> > This paragraph spans
+> > multiple lines.
+
+### Code Highlighting
+
+Putting codes inside Markdown is as easy as this:
+
+**Example:**
+
+```
+```html
+<body>
+  <p class="caption">Hello</p>
+</body>
+``````
+
+**Result:**
+
+```html
+<body>
+ <p class="caption">Hello</p>
+</body>
+```
+
+The support for which languages are supported and which are not depends
+on the highlighting engine that is being used. The engine contains a
+lexer that turns supported codes into other formats, for example html,
+that can be shown in the browser, after being coupled with appropriate
+css.
 
 [1]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [2]: https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
