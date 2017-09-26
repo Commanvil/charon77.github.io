@@ -164,8 +164,8 @@ Two main ways of writing headings.
     Heading 2
     ----------
     
-    The quick brown fox jumps over the lazy dog.*
-    ------------
+    The quick brown fox jumps over the lazy dog.
+    --------------------------------------------
     
     *Note: in some parser, the line below the heading must not be shorter
     than the text. This demonstrates what happens when this is violated.
@@ -177,11 +177,11 @@ Two main ways of writing headings.
     > =========    
     > Some text over here
     > 
-    > The quick brown fox jumps over the lazy dog.
-    > --------------------------------------------
+    > Heading 2
+    > ----------
     > 
     > The quick brown fox jumps over the lazy dog.
-    > ------------
+    > --------------------------------------------
 
 ### Blockquote
 
