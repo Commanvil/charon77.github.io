@@ -283,6 +283,22 @@ There are several search engines. Namely [Bing][bing], [Google](http://google.co
 [bing]: http://bing.com
 [100]: http://yahoo.com
 
+Conclusion
+----------
+
+That's the basic of Markdown. Hopefully you can start writing documents
+in Markdown, equipped with the knowledge you have now.
+
+Of course, this article barely scratches the surface. There are more
+advanced resources you can find as you progress, like tables, Github
+Flavored Markup (GFM), and many more that we did not cover.
+
+We hope this article serves as a stepping stone for you to write in
+Markdown.
+
+Make sure to checkout [this][1] and [this(PDF)][2] for more information,
+as well as resources you can find online to further improve your skills.
+
 
 [1]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [2]: https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
