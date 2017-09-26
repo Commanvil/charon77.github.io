@@ -251,5 +251,38 @@ being used. If supported, the engine turns codes into the display format,
 for example HTML in its "prettified" form. CSS is usually added so that
 the browser shows the code in colors.
 
+### Links
+When we write documents, mainly websites, linking other pages is important.
+Markdown provides various ways to write links.
+
+The most common way is to simply put the link next to the text you want
+to show as the link. The example below links to this page as a relative
+link, meaning the file is in the current folder.
+```
+Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
+```
+> Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
+
+You can also link to other websites by using the full URL.
+```
+Need to [search](https://www.google.com) something?
+```
+> Need to [search](https://www.google.com) something?
+
+Here are couple of examples, showing both direct link and separate linking
+in the reference.
+```
+There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
+
+[bing]: http://bing.com
+[100]: http://yahoo.com
+```
+
+> There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
+
+[bing]: http://bing.com
+[100]: http://yahoo.com
+
+
 [1]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [2]: https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf

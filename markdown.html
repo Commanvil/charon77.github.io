@@ -197,4 +197,28 @@ end by using three backticks (```).</p>
 being used. If supported, the engine turns codes into the display format,
 for example HTML in its “prettified” form. CSS is usually added so that
 the browser shows the code in colors.</p>
+<h3 id="links">Links</h3>
+<p>When we write documents, mainly websites, linking other pages is important.
+Markdown provides various ways to write links.</p>
+<p>The most common way is to simply put the link next to the text you want
+to show as the link. The example below links to this page as a relative
+link, meaning the file is in the current folder.</p>
+<pre><code>Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
+</code></pre><blockquote>
+<p>Introducing: <a href="markdown.html">Markdown</a>, the industry-standard format for writing articles!</p>
+</blockquote>
+<p>You can also link to other websites by using the full URL.</p>
+<pre><code>Need to [search](https://www.google.com) something?
+</code></pre><blockquote>
+<p>Need to <a href="https://www.google.com">search</a> something?</p>
+</blockquote>
+<p>Here are couple of examples, showing both direct link and separate linking
+in the reference.</p>
+<pre><code>There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
+
+[bing]: http://bing.com
+[100]: http://yahoo.com
+</code></pre><blockquote>
+<p>There are several search engines. Namely <a href="http://bing.com">Bing</a>, <a href="http://google.com">Google</a>, and <a href="http://yahoo.com">Yahoo</a>.</p>
+</blockquote>
 </body></html>
