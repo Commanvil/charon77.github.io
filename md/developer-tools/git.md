@@ -3,6 +3,20 @@ Git - The Ultimate Undo Tool for Collaborative Projects
 
 Back to [Index](index.html#-markdown-markdown-html-)
 
+Collaborating codes can be hard, and while using flashdrives to 
+copy codes can work, there are lots of concerns, like: what if
+we accidentally overwrite someone else's work? What if our work
+produces bugs we don't realize until later on? Can we rework our
+steps to fix the bugs?
+
+This section serves as a primer to Git, what is it, how to use it,
+when and why should you use Git.
+
+Even as a solo developer, you should still consider working with Git
+as there are lots of benefits you can get, so don't you stop reading
+just because you do everything by yourself.
+
+Now, let's check out what Git is all about.
 
 Motivation
 ----------
