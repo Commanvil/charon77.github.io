@@ -3,9 +3,9 @@
 <h2 id="motivation">Motivation</h2>
 <p>Imagine writing website pages. How would you normally do it? A bunch of
 html, links here and there, css files spread all over. What if, maybe some
-point in live you decided to use frameworks, such as bootstrap. Things
-do not go well, when you have to edit pages after pages one by one, adding
-bootstrap css files to each header, assigning classes to <code>&lt;div&gt;</code> and what-not.</p>
+point in life you decided to use frameworks, such as Bootstrap. Things
+would not go well, when you have to edit pages after pages, adding
+css files to each and every files, assigning classes to <code>&lt;div&gt;</code>s and what-not.</p>
 <p>Wouldn’t it be nice if we can spend more time <strong>actually</strong> write content, and
 not figuring out where the closing <code>&lt;/div&gt;</code> tags are?</p>
 <p>Markdown solves this problem.</p>
@@ -20,7 +20,6 @@ our website.</p>
 <p>Even today, people still favor Markdown for its readability (when viewed as a plain text)
 and its simplicity.</p>
 <p>Let’s take a look at a couple of examples.</p>
-<h2 id="example">Example</h2>
 <p>A typical html document would look like this:</p>
 <pre><code class="lang-html"><div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
@@ -63,18 +62,25 @@ Markdown files (.md) are documents that are easy to view, whether
 you view it on a browser (like Firefox) or using text editor (like Notepad).
 This allows even visitors that uses ancient PCs for _surfing the web_ to access
 our website.
-</code></pre><h2 id="commonly-used-markdown">Commonly used Markdown</h2>
+</code></pre><p>See how different it is between the two? The former (HTML) contains lots
+of so-called “HTML Tags” decorating the whole document. While easier
+for computers to read, we struggle to understand what the document is
+about.</p>
+<p>The latter (Markdown) looks much simpler and easier to read. There’s no
+doubt even first-timers would have no difficulties understanding
+what the document is about.</p>
+<h2 id="commonly-used-markdown">Commonly used Markdown</h2>
+<p>Here are some of the basic Markdown example to get started.</p>
+<p>Unlike HTML, there are no ‘basic structure’ in Markdown. You can just
+write as if you’re writing in any word processors such as Notepad, and
+you are already writing in Markdown. There are some features described
+below, describing how certain texts should be displayed.</p>
 <p>This section is based on <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">this</a> and <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">this(pdf)</a>, which are really useful
 for starters learning how to use Markdown for the first time.</p>
-<p>Other exhaustive Markdown resources are also available, ranging from 
-different flavors of Markdown, one of which being gfm (GitHub Flavored Markdown), etc.</p>
-<p>Here are some of the basic Markdown example to get started.</p>
 <h3 id="paragraphs">Paragraphs</h3>
-<p>A paragraph in Markdown are just text that spans multiple lines, separated by blank lines.
-This is useful, as paragraphs tend to be lengthy, and writing a single paragraphs
-on a single line would be confusing, especially in times when word-wrapping wasn’t a thing.</p>
-<p>A new paragraph is inserted when you insert a blank line, followed by more text.
-To illustrate, let’s take a look on these examples.</p>
+<p>A paragraph in Markdown is just some lines of text. A blank line
+separates paragraphs.</p>
+<p>To illustrate, let’s take a look on these examples.</p>
 <pre><code>This section demonstrates paragraphs
 that are written
 across multiple lines. The quick brown fox jumps over the
@@ -94,9 +100,10 @@ The quick brown fox jumps over the lazy dog.</p>
 empty line that comes before it.</p>
 </blockquote>
 <h3 id="headings">Headings</h3>
+<p>Headings marks the beginning of a section.</p>
 <p>Two main ways of writing headings.</p>
 <ol>
-<li><p>Using # followed by space before the heading.</p>
+<li><p>Hashes (#) followed by the heading.</p>
 <p><strong>Example:</strong></p>
 <pre><code># This is heading 1
 Some text.
@@ -116,7 +123,7 @@ More text!
 <p>More text!</p>
 </blockquote>
 </li>
-<li><p>Using = or - at the <em>bottom</em> of the heading.</p>
+<li><p>Equal sign (=) or Minus sign (-) at the <em>bottom</em> of the heading.</p>
 <p>Personally, I prefer this method as it looks clearer in plaintext.
 You can use this format <strong>only</strong> for Heading 1 and Heading 2. For
 levels below it, revert to the # format.</p>
@@ -145,9 +152,9 @@ looks bad.
 </li>
 </ol>
 <h3 id="blockquote">Blockquote</h3>
-<p>A blockquote can be added, usually to indicate a group of text,
-typically to quote someone else. This can be done by 
-putting the symbol <code>&gt;</code> before the start of line.</p>
+<p>Blockquotes indicates a group of text,
+sometimes to quote someone else. This can be done by 
+putting the symbol greater-than (<code>&gt;</code>) before the start of the line.</p>
 <p><strong>Example:</strong></p>
 <pre><code>This is a normal line.
 
@@ -165,7 +172,9 @@ multiple lines.</p>
 </blockquote>
 </blockquote>
 <h3 id="code-highlighting">Code Highlighting</h3>
-<p>Putting codes inside Markdown is as easy as this:</p>
+<p>You can put codes and have highlighting by using three backticks (```)
+followed by the language. Then put your code on a new line. Finally,
+end by using three backticks (```).</p>
 <p><strong>Example:</strong></p>
 <pre><code>```html
 &lt;body&gt;
@@ -179,9 +188,8 @@ multiple lines.</p>
 </pre></div>
 
 </code></pre>
-<p>The support for which languages are supported and which are not depends
-on the highlighting engine that is being used. The engine contains a
-lexer that turns supported codes into other formats, for example html,
-that can be shown in the browser, after being coupled with appropriate
-css.</p>
+<p>Please note that language support depends on the highlighting engine
+being used. If supported, the engine turns codes into the display format,
+for example HTML in its “prettified” form. CSS is usually added so that
+the browser shows the code in colors.</p>
 </body></html>

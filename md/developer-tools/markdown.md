@@ -9,9 +9,9 @@ Motivation
 
 Imagine writing website pages. How would you normally do it? A bunch of
 html, links here and there, css files spread all over. What if, maybe some
-point in live you decided to use frameworks, such as bootstrap. Things
-do not go well, when you have to edit pages after pages one by one, adding
-bootstrap css files to each header, assigning classes to `<div>` and what-not.
+point in life you decided to use frameworks, such as Bootstrap. Things
+would not go well, when you have to edit pages after pages, adding
+css files to each and every files, assigning classes to `<div>`s and what-not.
 
 Wouldn't it be nice if we can spend more time **actually** write content, and
 not figuring out where the closing `</div>` tags are?
@@ -34,9 +34,6 @@ Even today, people still favor Markdown for its readability (when viewed as a pl
 and its simplicity.
 
 Let's take a look at a couple of examples.
-
-Example
--------
 
 A typical html document would look like this:
 ```html
@@ -85,22 +82,32 @@ This allows even visitors that uses ancient PCs for _surfing the web_ to access
 our website.
 ```
 
+See how different it is between the two? The former (HTML) contains lots
+of so-called "HTML Tags" decorating the whole document. While easier
+for computers to read, we struggle to understand what the document is
+about.
+
+The latter (Markdown) looks much simpler and easier to read. There's no
+doubt even first-timers would have no difficulties understanding
+what the document is about.
+
 Commonly used Markdown
 ----------------------
+Here are some of the basic Markdown example to get started.
+
+Unlike HTML, there are no 'basic structure' in Markdown. You can just
+write as if you're writing in any word processors such as Notepad, and
+you are already writing in Markdown. There are some features described
+below, describing how certain texts should be displayed.
+
 This section is based on [this][1] and [this(pdf)][2], which are really useful
 for starters learning how to use Markdown for the first time.
 
-Other exhaustive Markdown resources are also available, ranging from 
-different flavors of Markdown, one of which being gfm (GitHub Flavored Markdown), etc.
-
-Here are some of the basic Markdown example to get started.
 
 ### Paragraphs
-A paragraph in Markdown are just text that spans multiple lines, separated by blank lines.
-This is useful, as paragraphs tend to be lengthy, and writing a single paragraphs
-on a single line would be confusing, especially in times when word-wrapping wasn't a thing.
+A paragraph in Markdown is just some lines of text. A blank line
+separates paragraphs.
 
-A new paragraph is inserted when you insert a blank line, followed by more text.
 To illustrate, let's take a look on these examples.
 
 ```
@@ -125,8 +132,11 @@ empty line that comes before it.
 > empty line that comes before it.
 
 ### Headings
+
+Headings marks the beginning of a section.
+
 Two main ways of writing headings.
-1.  Using \# followed by space before the heading.
+1.  Hashes (\#) followed by the heading.
     
     **Example:**
     ```
@@ -149,7 +159,7 @@ Two main ways of writing headings.
     > ###### Heading 6
     > More text!
     
-2.  Using = or - at the _bottom_ of the heading.
+2.  Equal sign (=) or Minus sign (-) at the _bottom_ of the heading.
     
     Personally, I prefer this method as it looks clearer in plaintext.
     You can use this format **only** for Heading 1 and Heading 2. For
@@ -185,9 +195,9 @@ Two main ways of writing headings.
 
 ### Blockquote
 
-A blockquote can be added, usually to indicate a group of text,
-typically to quote someone else. This can be done by 
-putting the symbol `>` before the start of line.
+Blockquotes indicates a group of text,
+sometimes to quote someone else. This can be done by 
+putting the symbol greater-than (`>`) before the start of the line.
 
 **Example:**
 
@@ -210,7 +220,9 @@ This is a normal line.
 
 ### Code Highlighting
 
-Putting codes inside Markdown is as easy as this:
+You can put codes and have highlighting by using three backticks (\`\`\`)
+followed by the language. Then put your code on a new line. Finally,
+end by using three backticks (\`\`\`).
 
 **Example:**
 
@@ -229,11 +241,10 @@ Putting codes inside Markdown is as easy as this:
 </body>
 ```
 
-The support for which languages are supported and which are not depends
-on the highlighting engine that is being used. The engine contains a
-lexer that turns supported codes into other formats, for example html,
-that can be shown in the browser, after being coupled with appropriate
-css.
+Please note that language support depends on the highlighting engine
+being used. If supported, the engine turns codes into the display format,
+for example HTML in its "prettified" form. CSS is usually added so that
+the browser shows the code in colors.
 
 [1]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [2]: https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
