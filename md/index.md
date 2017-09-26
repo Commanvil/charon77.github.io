@@ -34,4 +34,4 @@ This section is dedicated for things that make job as a developer easier.
 This includes tools that 'we can live without but are nicer to have'.
 
 #### [Git - The Ultimate Undo Tool for Collaborative Projects](git.html)
-#### [Markdown](markdown.html)
+#### [Markdown - Spend More Time on Writing, Not Formatting](markdown.html)

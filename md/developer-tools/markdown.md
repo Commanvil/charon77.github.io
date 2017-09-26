@@ -1,7 +1,26 @@
-Markdown
-========
+Markdown - Spend More Time on Writing, Not Formatting
+======================================================
 
 Back to [Index](index.html#-markdown-markdown-html-)
+
+
+Motivation
+-----------
+
+Imagine writing website pages like how you normally would: a bunch of
+html, links here and there, css files spread all over. Then, maybe some
+point in live you decided to use frameworks, such as bootstrap. Things
+do not go well, when you have to edit pages after pages one by one, adding
+bootstrap css files to each header, assigning classes to `<div>` and what-not.
+
+Wouldn't it be nice if we can spend more time **actually** write content, and
+not figuring out where the closing `</div>` tags are?
+
+Markdown solves this problem.
+
+Markdown, on the other hand contains just the document and a few other things;
+not much. This is so unlike html documents which contains lots unimportant text
+that are not content, but have to be there in order to have _nice display_.
 
 What is it?
 -----------
@@ -11,26 +30,10 @@ you view it on a browser (like Firefox) or using text editor (like Notepad).
 This allows even visitors that uses ancient PCs for _surfing the web_ to access
 our website.
 
-But come on. This is not why we still write in Markdown as of today.
-There are some practical applications that still applies today.
+Even today, people still favor Markdown for its readability (when viewed as a plain text)
+and its simplicity.
 
-Motivation
------------
-
-So why do we need to use Markdown? Isn't it yet another format to 
-display bunch of text on the internet?
-
-Imagine writing website pages like how you normally would: a bunch of
-html, links here and there, css files spread all over. Then, maybe some
-point in live you decided to use frameworks, such as bootstrap. Things
-do not go well, when you have to edit pages after pages one by one, adding
-bootstrap css files to each header, assigning classes to `<div>` and what-not.
-
-It is a nightmare.
-
-Markdown, on the other hand contains just the document and a few other things;
-not much. This is so unlike html documents which contains lots unimportant text
-that are not content, but have to be there in order to have _nice display_.
+Let's take a look at a couple of examples.
 
 Example
 -------
