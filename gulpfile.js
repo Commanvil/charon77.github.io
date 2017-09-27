@@ -2,12 +2,19 @@ const gulp = require('gulp')
 const markdown = require('gulp-markdown');
 const wrapper = require('gulp-wrapper');
 const flatten = require('gulp-flatten');
-const writeGood = require('gulp-write-good')
+const writeGood = require('write-good')
+const child_process = require('child_process')
 
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-minify-css')
 
-gulp.watch('md/**/*.md', ['md', 'spellcheck'])
+const mdWatcher = gulp.watch('md/**/*.md', ['md'])
+
+mdWatcher.on('change', ({path}, stat)=>{
+  child_process.execFile('./node_modules/write-good/bin/write-good.js', [path], (error, stdout, stderr)=>{
+    console.log(stdout)
+  })
+})
 
 gulp.watch('css/**/*.css', ['css'])
 
@@ -18,12 +25,6 @@ gulp.task('css', function(){
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('.'))
   
-})
-
-gulp.task('spellcheck', function() {
-  return gulp.src('md/**/*.md')
-    .pipe(writeGood())
-    .pipe(writeGood.reporter())
 })
 
 gulp.task('md', function(){
