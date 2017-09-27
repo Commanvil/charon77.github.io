@@ -2,11 +2,12 @@ const gulp = require('gulp')
 const markdown = require('gulp-markdown');
 const wrapper = require('gulp-wrapper');
 const flatten = require('gulp-flatten');
+const writeGood = require('gulp-write-good')
 
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-minify-css')
 
-gulp.watch('md/**/*.md', ['md'])
+gulp.watch('md/**/*.md', ['md', 'spellcheck'])
 
 gulp.watch('css/**/*.css', ['css'])
 
@@ -17,6 +18,12 @@ gulp.task('css', function(){
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('.'))
   
+})
+
+gulp.task('spellcheck', function() {
+  return gulp.src('md/**/*.md')
+    .pipe(writeGood())
+    .pipe(writeGood.reporter())
 })
 
 gulp.task('md', function(){
