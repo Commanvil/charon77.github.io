@@ -74,61 +74,46 @@ about.</p>
 <p>The latter (Markdown) looks much simpler and easier to read. There’s no
 doubt even first-timers would have no difficulties understanding
 what the document is about.</p>
-<h2 id="commonly-used-markdown">Commonly used Markdown</h2>
-<p>Here are some of the basic Markdown example to get started.</p>
-<p>Unlike HTML, there are no ‘basic structure’ in Markdown. You can just
-write as if you’re writing in any word processors such as Notepad, and
-you are already writing in Markdown. There are some features described
-below, describing how certain texts should be displayed.</p>
-<p>This section is based on <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">this</a> and <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">this(pdf)</a>, which are really useful
-for starters learning how to use Markdown for the first time.</p>
-<h3 id="paragraphs">Paragraphs</h3>
-<p>A paragraph in Markdown is just some lines of text. A blank line
-separates paragraphs.</p>
-<p>To illustrate, let’s take a look on these examples.</p>
-<pre><code>This section demonstrates paragraphs
-that are written
-across multiple lines. The quick brown fox jumps over the
-lazy dog. The quick brown fox jumps over the lazy dog.
-The quick brown fox jumps over the lazy dog.
+<h2 id="getting-started">Getting Started</h2>
+<p>At first, I thought that getting started with Markdown is easy: open
+up a text-editor and start writing. But maybe you don’t know how to
+write in Markdown, what should you do?</p>
+<p>The first step would be to familiarize yourself. If you have never seen
+Markdown before, don’t be ashamed. It is a somewhat old format (but not forgotten).
+Make sure to have a good look on how Markdown looks like in the
+section above.</p>
+<p>When trying Markdown, it is <strong>important</strong> to keep this in mind:</p>
+<p>Markdown tries to be as close as plain-text as possible. When you encounter
+something you need to do, and you don’t know how to do it: Think, what if this
+is just a Notepad? How would you write it so that it looks nice?</p>
+<p>Therefore, don’t take Markdown as another language, but rather as a way you should
+<strong>always</strong> write something when asked to make a document in plaintext.</p>
+<h3 id="heading">Heading</h3>
+<p>Keeping that in mind, how would you write a title in order to distinguish it
+from other texts?</p>
+<p>Let that sink for a second.</p>
+<p>What about writing the title, and putting some sort of underline below it?
+Write something like this.</p>
+<pre><code>Title
+=====
 
-This sentence sits on a new paragraph, because of the
-empty line that comes before it.
-</code></pre><p><strong>This will yield:</strong></p>
+Lesson 1
+--------
+
+Underlines using = for title, - for section header.
+</code></pre><p>which gives the following result:</p>
 <blockquote>
-<p>This section demonstrates paragraphs
-that are written
-across multiple lines.  The quick brown fox jumps over the
-lazy dog. The quick brown fox jumps over the lazy dog.
-The quick brown fox jumps over the lazy dog.</p>
-<p>This sentence sits on a new paragraph, because of the
-empty line that comes before it.</p>
+<h1 id="title">Title</h1>
+<h2 id="lesson-1">Lesson 1</h2>
+<p>Underlines using = for title, - for section header.</p>
 </blockquote>
-<h3 id="headings">Headings</h3>
+<p>Sounds neat! You now know how to make <code>headings</code>! Do you see how natural
+it becomes to write in Markdown?</p>
+<p>Now, let’s dig deeper.</p>
 <p>Headings marks the beginning of a section.</p>
-<p>Two main ways of writing headings.</p>
+<p>There are two ways to make headings.</p>
 <ol>
-<li><p>Hashes (#) followed by the heading.</p>
-<p><strong>Example:</strong></p>
-<pre><code># This is heading 1
-Some text.
-## Heading 2
-### Heading 3
-...
-###### Heading 6
-More text!
-</code></pre><p><strong>Which yields to:</strong></p>
-<blockquote>
-<h1 id="this-is-heading-1">This is heading 1</h1>
-<p>Some text.</p>
-<h2 id="heading-2">Heading 2</h2>
-<h3 id="heading-3">Heading 3</h3>
-<p>…</p>
-<h6 id="heading-6">Heading 6</h6>
-<p>More text!</p>
-</blockquote>
-</li>
-<li><p>Equal sign (=) or Minus sign (-) at the <em>bottom</em> of the heading.</p>
+<li><p>Equal sign (=) or Dash sign (-) at the <em>bottom</em> of the heading.</p>
 <p>Personally, I prefer this method as it looks clearer in plaintext.
 You can use this format <strong>only</strong> for Heading 1 and Heading 2. For
 levels below it, revert to the # format.</p>
@@ -155,10 +140,103 @@ looks bad.
 <h2 id="the-quick-brown-fox-jumps-over-the-lazy-dog-">The quick brown fox jumps over the lazy dog.</h2>
 </blockquote>
 </li>
+<li><p>Hashes (#) can also be used before the heading. Think about it.
+If you put any sort of symbol before a text, you would easily find it,
+as you only need to skim through the first character.</p>
+<p>In Markdown, this is useful when your heading is more than two levels deep,
+as = and - can only be used for level 1 and level 2 respectively.
+Hashes can mark headings from 1 to 6, depending on how many hashes
+do you use.</p>
+<p><strong>Example:</strong></p>
+<pre><code># This is heading 1
+Some text.
+## Heading 2
+### Heading 3
+...
+###### Heading 6
+More text!
+</code></pre><p><strong>Which yields to:</strong></p>
+<blockquote>
+<h1 id="this-is-heading-1">This is heading 1</h1>
+<p>Some text.</p>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<p>…</p>
+<h6 id="heading-6">Heading 6</h6>
+<p>More text!</p>
+</blockquote>
+</li>
 </ol>
-<h3 id="blockquote">Blockquote</h3>
-<p>Blockquotes indicates a group of text,
-sometimes to quote someone else. This can be done by 
+<p>Amazing, right? Did you get the intuitive feeling? Let’s move along.</p>
+<h3 id="paragraphs">Paragraphs</h3>
+<p>How would you write paragraphs, say, in a word processor? You separate
+them with <code>enter</code>.</p>
+<p>Paragraphs:</p>
+<ul>
+<li>One or several lines of text becomes a single paragraph</li>
+<li>A blank line separates paragraphs.</li>
+</ul>
+<p>To illustrate, let’s take a look on these examples.</p>
+<pre><code>This section demonstrates paragraphs
+that are written
+across multiple lines. The quick brown fox jumps over the
+lazy dog. The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.
+
+This sentence sits on a new paragraph, because of the
+empty line that comes before it.
+</code></pre><p><strong>This will yield:</strong></p>
+<blockquote>
+<p>This section demonstrates paragraphs
+that are written
+across multiple lines.  The quick brown fox jumps over the
+lazy dog. The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog.</p>
+<p>This sentence sits on a new paragraph, because of the
+empty line that comes before it.</p>
+</blockquote>
+<p>It’s that easy!</p>
+<h3 id="lists">Lists</h3>
+<p>Lists are useful to convey several information that are
+related. There are two types of them: bullet point
+and numbered list.</p>
+<p>You can use bullet points for describing things that are in parallel,
+for example:</p>
+<p>Reasons why Markdown is amazing:</p>
+<ul>
+<li>Easy to read</li>
+<li>Simple to write</li>
+<li>Good looking</li>
+</ul>
+<p>You can make bullet points by putting dash (-) and a space in front of the
+items like so:</p>
+<pre><code>Reasons why Markdown is amazing:
+- Easy to read
+- Simple to write
+- Good looking
+</code></pre><p>You can use numbered list to say things in order.</p>
+<p>Here’s an example:</p>
+<p>How to write:</p>
+<ol>
+<li>Find ideas</li>
+<li>Draft</li>
+<li>Write</li>
+<li>Spellcheck</li>
+<li>Publish</li>
+</ol>
+<p><strong>Q:</strong> How would you do that on a Markdown?</p>
+<p><strong>A:</strong> Just like on a paper!</p>
+<pre><code>How to write:
+1. Find ideas
+2. Draft
+3. Write
+4. Spellcheck
+5. Publish
+</code></pre><h3 id="blockquote">Blockquote</h3>
+<p>Sometimes, you might find the need to quote someone else,
+either their post, the books they’ve written, etc.</p>
+<p>You can do this using Blockquote.</p>
+<p>Blockquotes indicates a group of text. This can be done by 
 putting the symbol greater-than (<code>&gt;</code>) before the start of the line.</p>
 <p><strong>Example:</strong></p>
 <pre><code>This is a normal line.
@@ -175,6 +253,27 @@ putting the symbol greater-than (<code>&gt;</code>) before the start of the line
 <p>This paragraph spans
 multiple lines.</p>
 </blockquote>
+</blockquote>
+<p><strong>Question:</strong></p>
+<p>How would you put their name inside the Blockquote?
+Usually we put a dash (-) before the name, but when we type it like that,</p>
+<pre><code>&gt; Doe not panic!
+&gt;
+&gt; - John Doe
+</code></pre><blockquote>
+<p>Doe not panic!</p>
+<ul>
+<li>John Doe</li>
+</ul>
+</blockquote>
+<p>It turns into a bullet point.</p>
+<p>To write a literal dash, we type the dash twice (--)</p>
+<pre><code>&gt; Doe not panic!
+&gt;
+&gt; -- John Doe
+</code></pre><blockquote>
+<p>Doe not panic!</p>
+<p>– John Doe</p>
 </blockquote>
 <h3 id="code-highlighting">Code Highlighting</h3>
 <p>You can put codes and have highlighting by using three backticks (```)

@@ -96,22 +96,141 @@ The latter (Markdown) looks much simpler and easier to read. There's no
 doubt even first-timers would have no difficulties understanding
 what the document is about.
 
-Commonly used Markdown
-----------------------
-Here are some of the basic Markdown example to get started.
+Getting Started
+---------------
 
-Unlike HTML, there are no 'basic structure' in Markdown. You can just
-write as if you're writing in any word processors such as Notepad, and
-you are already writing in Markdown. There are some features described
-below, describing how certain texts should be displayed.
+At first, I thought that getting started with Markdown is easy: open
+up a text-editor and start writing. But maybe you don't know how to
+write in Markdown, what should you do?
 
-This section is based on [this][1] and [this(pdf)][2], which are really useful
-for starters learning how to use Markdown for the first time.
+The first step would be to familiarize yourself. If you have never seen
+Markdown before, don't be ashamed. It is a somewhat old format (but not forgotten).
+Make sure to have a good look on how Markdown looks like in the
+section above.
 
+When trying Markdown, it is **important** to keep this in mind:
+
+Markdown tries to be as close as plain-text as possible. When you encounter
+something you need to do, and you don't know how to do it: Think, what if this
+is just a Notepad? How would you write it so that it looks nice?
+
+Therefore, don't take Markdown as another language, but rather as a way you should
+**always** write something when asked to make a document in plaintext.
+
+### Heading
+
+Keeping that in mind, how would you write a title in order to distinguish it
+from other texts?
+
+Let that sink for a second.
+
+What about writing the title, and putting some sort of underline below it?
+Write something like this.
+
+```
+Title
+=====
+
+Lesson 1
+--------
+
+Underlines using = for title, - for section header.
+
+```
+
+which gives the following result:
+
+> Title
+> =====
+> 
+> Lesson 1
+> --------
+> 
+> Underlines using = for title, - for section header.
+
+Sounds neat! You now know how to make `headings`! Do you see how natural
+it becomes to write in Markdown?
+
+Now, let's dig deeper.
+
+Headings marks the beginning of a section.
+
+There are two ways to make headings.
+
+1.  Equal sign (=) or Dash sign (-) at the _bottom_ of the heading.
+    
+    Personally, I prefer this method as it looks clearer in plaintext.
+    You can use this format **only** for Heading 1 and Heading 2. For
+    levels below it, revert to the \# format.
+    
+    **Example:**
+```
+    Heading 1
+    =========    
+    Some text over here.
+    
+    Heading 2
+    ----------
+    
+    The quick brown fox jumps over the lazy dog.
+    --------------------------------------------
+    
+    *Note: in some parser, the line below the heading must not be shorter
+    than the text. This demonstrates what happens when this is violated.
+    Even though it appears well here, it's use is discouraged. Besides, it
+    looks bad.
+```
+    **Result:**
+    > Heading 1
+    > =========    
+    > Some text over here
+    > 
+    > Heading 2
+    > ----------
+    > 
+    > The quick brown fox jumps over the lazy dog.
+    > --------------------------------------------
+
+2.  Hashes (\#) can also be used before the heading. Think about it.
+    If you put any sort of symbol before a text, you would easily find it,
+    as you only need to skim through the first character.
+    
+    In Markdown, this is useful when your heading is more than two levels deep,
+    as = and - can only be used for level 1 and level 2 respectively.
+    Hashes can mark headings from 1 to 6, depending on how many hashes
+    do you use.
+
+    **Example:**
+```
+    # This is heading 1
+    Some text.
+    ## Heading 2
+    ### Heading 3
+    ...
+    ###### Heading 6
+    More text!
+```
+    
+    **Which yields to:**
+    
+    > # This is heading 1
+    > Some text.
+    > ## Heading 2
+    > ### Heading 3
+    > ...
+    > ###### Heading 6
+    > More text!
+
+Amazing, right? Did you get the intuitive feeling? Let's move along.
 
 ### Paragraphs
-A paragraph in Markdown is just some lines of text. A blank line
-separates paragraphs.
+
+How would you write paragraphs, say, in a word processor? You separate
+them with `enter`.
+
+Paragraphs:
+- One or several lines of text becomes a single paragraph
+- A blank line separates paragraphs.
 
 To illustrate, let's take a look on these examples.
 
@@ -136,72 +255,65 @@ empty line that comes before it.
 > This sentence sits on a new paragraph, because of the
 > empty line that comes before it.
 
-### Headings
+It's that easy!
 
-Headings marks the beginning of a section.
+### Lists
 
-Two main ways of writing headings.
-1.  Hashes (\#) followed by the heading.
-    
-    **Example:**
-    ```
-    # This is heading 1
-    Some text.
-    ## Heading 2
-    ### Heading 3
-    ...
-    ###### Heading 6
-    More text!
-    ```
-    
-    **Which yields to:**
-    
-    > # This is heading 1
-    > Some text.
-    > ## Heading 2
-    > ### Heading 3
-    > ...
-    > ###### Heading 6
-    > More text!
-    
-2.  Equal sign (=) or Minus sign (-) at the _bottom_ of the heading.
-    
-    Personally, I prefer this method as it looks clearer in plaintext.
-    You can use this format **only** for Heading 1 and Heading 2. For
-    levels below it, revert to the \# format.
-    
-    **Example:**
-    ```
-    Heading 1
-    =========    
-    Some text over here.
-    
-    Heading 2
-    ----------
-    
-    The quick brown fox jumps over the lazy dog.
-    --------------------------------------------
-    
-    *Note: in some parser, the line below the heading must not be shorter
-    than the text. This demonstrates what happens when this is violated.
-    Even though it appears well here, it's use is discouraged. Besides, it
-    looks bad.
-    ```
-    **Result:**
-    > Heading 1
-    > =========    
-    > Some text over here
-    > 
-    > Heading 2
-    > ----------
-    > 
-    > The quick brown fox jumps over the lazy dog.
-    > --------------------------------------------
+Lists are useful to convey several information that are
+related. There are two types of them: bullet point
+and numbered list.
+
+You can use bullet points for describing things that are in parallel,
+for example:
+
+Reasons why Markdown is amazing:
+- Easy to read
+- Simple to write
+- Good looking
+
+You can make bullet points by putting dash (-) and a space in front of the
+items like so:
+
+```
+Reasons why Markdown is amazing:
+- Easy to read
+- Simple to write
+- Good looking
+```
+
+You can use numbered list to say things in order.
+
+Here's an example:
+
+How to write:
+1. Find ideas
+2. Draft
+3. Write
+4. Spellcheck
+5. Publish
+
+**Q:** How would you do that on a Markdown?
+
+**A:** Just like on a paper!
+
+```
+How to write:
+1. Find ideas
+2. Draft
+3. Write
+4. Spellcheck
+5. Publish
+```
+
 
 ### Blockquote
 
-Blockquotes indicates a group of text,
-sometimes to quote someone else. This can be done by 
+Sometimes, you might find the need to quote someone else,
+either their post, the books they've written, etc.
+
+You can do this using Blockquote.
+
+Blockquotes indicates a group of text. This can be done by 
 putting the symbol greater-than (`>`) before the start of the line.
 
 **Example:**
@@ -222,6 +334,36 @@ This is a normal line.
 
 > > This paragraph spans
 > > multiple lines.
+
+**Question:**
+
+How would you put their name inside the Blockquote?
+Usually we put a dash (-) before the name, but when we type it like that,
+
+```
+> Doe not panic!
+>
+> - John Doe
+```
+
+> Doe not panic!
+>
+> - John Doe
+
+It turns into a bullet point.
+
+To write a literal dash, we type the dash twice (\-\-)
+
+```
+> Doe not panic!
+>
+> -- John Doe
+```
+
+> Doe not panic!
+>
+> -- John Doe
+
 
 ### Code Highlighting
 
