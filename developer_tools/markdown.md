@@ -44,19 +44,25 @@ even argue: **CSS is the worst**.
 But here's the deal. If you have no idea what **HTML** and **CSS**
 are, don't worry, we won't be needing them.
 
-To reiterate: with Markdown, we can finally spend more time **actually** writing content.
+###### To reiterate: with Markdown, we can finally spend more time **actually** writing content.
+
 
 #### How does Markdown do anything differently?
-
 
 Unlike the more difficult HTML or CSS, Markdown, on the other hand contains **just**
 the document and nothing else. This is achieved by having _markups_ that looks
 natural to the human eyes (hence the name Markdown).
 
+Despite that, Markdown is powerful enough to do _some formatting_ to make pretty
+websites. In fact, this blog is written with Markdown. Don't believe me? You can
+check the source Markdown for this article (or any other articles) by changing
+the link in the address bar from `.html` to `.md`
+(or, you know, click [this](markdown.md)).
+
 Formally speaking, markdown files `.md` are documents that are _easy to view_, whether
 you view it on a browser (like Firefox) or using text editor (like Notepad).
 
-Let that sink in for a moment.
+###### Let that sink in for a moment.
 
 With Markdown, you can see a website _nicely_ even with just a text browser.
 This is _sooooooo_ unlike HTML, which looks gibberish to the untrained eyes.
@@ -67,7 +73,8 @@ our website.
 
 Let's take a look at a couple of examples.
 
-A typical html document would look like this:
+###### A typical html document would look like this:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -120,23 +127,28 @@ what the document is about.
 Getting Started
 ---------------
 
-At first, I thought that getting started with Markdown is easy: open
-up a text-editor and start writing. But maybe you don't know how to
-write in Markdown, what should you do?
+As simple as it is, you need to _write_ in Markdown to get familiar with
+it. There are many tools and other ways you can do that.
 
-The first step would be to familiarize yourself. If you have never seen
+Here are some online editor for you to quickly try Markdown:
+- http://markdownlivepreview.com
+- https://jbt.github.io/markdown-editor
+
+Now that you've picked your editor,
+the first step would be to familiarize yourself. If you have never seen
 Markdown before, don't be ashamed. It is a somewhat old format (but not forgotten).
 Make sure to have a good look on how Markdown looks like in the
 section above.
 
-When trying Markdown, it is **important** to keep this in mind:
 
-Markdown tries to be as close as plain-text as possible. When you encounter
-something you need to do, and you don't know how to do it: Think, what if this
-is just a Notepad? How would you write it so that it looks nice?
+##### Markdown tries to be as close as plain-text as possible.
+
+When trying Markdown, it is important to keep this in mind. When you
+encounter something you need to do, and you don't know how to do it, think: how
+would you write it in Notepad it so that it looks nice?
 
 Therefore, don't take Markdown as another language, but rather as a way you should
-**always** write something when asked to make a document in plaintext.
+**always** write in plain text
 
 ### Heading
 
@@ -180,7 +192,7 @@ There are **two** ways to make headings.
 
 #### First way: Equal sign `=` or Dash sign `-` at the _bottom_ of the heading.
     
-Personally, I prefer this method as it looks clearer in plaintext.
+Personally, I prefer this method as it looks clearer in plain text.
 You can use this format **only** for Heading 1 and Heading 2. For
 levels below it, revert to the \# format.
     
