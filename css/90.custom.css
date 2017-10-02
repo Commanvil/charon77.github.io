@@ -75,3 +75,8 @@ blockquote {
 		max-width: 60rem;
 	}
 }
+
+code
+{
+	background-color: #e0e6e6;
+}
