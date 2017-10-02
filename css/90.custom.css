@@ -67,3 +67,10 @@ blockquote {
 		margin-right: 40px;
 	}
 }
+
+@media screen and (min-width: 64rem)
+{
+	body {
+		max-width: 60rem;
+	}
+}
