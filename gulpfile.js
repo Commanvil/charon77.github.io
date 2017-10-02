@@ -8,7 +8,9 @@ const child_process = require('child_process')
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-minify-css')
 
-const mdWatcher = gulp.watch('md/**/*.md', ['md'])
+const globMarkdown = ['./**/*.md', '!./node_modules/**'];
+
+const mdWatcher = gulp.watch(globMarkdown, ['md'])
 
 mdWatcher.on('change', ({path}, stat)=>{
   child_process.execFile('./node_modules/write-good/bin/write-good.js', [path], (error, stdout, stderr)=>{
@@ -49,8 +51,7 @@ gulp.task('md', function(){
     }
   }
   
-  return gulp.src('md/**/*.md')
-    .pipe(flatten())
+  return gulp.src(globMarkdown)
     .pipe(markdown(opts))
     .pipe(wrapper({
       header: '<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="style.min.css"/></head><body>',

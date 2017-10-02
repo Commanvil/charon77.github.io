@@ -1,42 +1,69 @@
-Markdown - Spend More Time on Writing, Not Formatting
-======================================================
+How to write blogs without any code: A Beginner’s guide to Markdown
+===================================================================
 
-Back to [Index](index.html#-markdown-markdown-html-)
+_Back to [Index](index.html#-markdown-markdown-html-)_
 
-Humans are always about writings, ever since historical times.
-Even in the current digital age, writings stay relevant on The Internet.
-In this section, we will cover a document format called Markdown, that
-is easy to write, looks nice in both browsers and text editors, and
-hassle-free.
+Have you ever wanted to make a blog?
+
+We all do. Yet, making websites is not for everyone.
+
+Some of you might be using Wordpress or Blogspot. But while they do have their
+own benefits, 
+
+What if you want to spend **less** time setting up Wordpress,
+or configuring Blospot, and **more** on _actually_ writing content?
+
+##### If you can write in Notepad, you can make a blog.
+
+And I'm going to show how with all of you right now.
+
+In this article you'll learn:
+- What is Markdown, and how it makes anything easier
+- How to write in Markdown (it's very easy, I promise.)
+
+In the next article, you will also learn
+how to publish websites for free with Github, so that
+you can share the link to everyone else in the world! _(coming soon)_
 
 Motivation
 -----------
 
-Imagine writing website pages. How would you normally do it? A bunch of
-html, links here and there, css files spread all over. What if, maybe some
-point in life you decided to use frameworks, such as Bootstrap. Things
-would not go well, when you have to edit pages after pages, adding
-css files to each and every files, assigning classes to `<div>`s and what-not.
+You're an aspiring writer. Maybe you want to tell people how well
+that sushi restaurant you just visited, or you want to review a brand new
+camera of yours.
 
-Wouldn't it be nice if we can spend more time **actually** write content, and
-not figuring out where the closing `</div>` tags are?
+You wanted to write something that people can share on Facebook, you want
+to put pictures in it, and you need to be able to write it anywhere
+you bring your computers to.
 
-Markdown solves this problem.
+For some of you _tech savvy_ readers, you might just write in **HTML** and **CSS**.
+But what if, maybe, you don't know how to write in HTML? Maybe you
+don't have time to learn it, and to be fair, HTML is _kind of_ complicated. Some
+even argue: **CSS is the worst**.
 
-Markdown, on the other hand contains just the document and a few other things;
-not much. This is so unlike html documents which contains lots unimportant text
-that are not content, but have to be there in order to have _nice display_.
+But here's the deal. If you have no idea what **HTML** and **CSS**
+are, don't worry, we won't be needing them.
 
-What is it?
------------
+To reiterate: with Markdown, we can finally spend more time **actually** writing content.
 
-Markdown files (.md) are documents that are easy to view, whether
+#### How does Markdown do anything differently?
+
+
+Unlike the more difficult HTML or CSS, Markdown, on the other hand contains **just**
+the document and nothing else. This is achieved by having _markups_ that looks
+natural to the human eyes (hence the name Markdown).
+
+Formally speaking, markdown files (.md) are documents that are _easy to view_, whether
 you view it on a browser (like Firefox) or using text editor (like Notepad).
-This allows even visitors that uses ancient PCs for _surfing the web_ to access
-our website.
 
-Even today, people still favor Markdown for its readability (when viewed as a plain text)
-and its simplicity.
+Let that sink in for a moment.
+
+With Markdown, you can see a website _nicely_ even with just a text browser.
+This is _sooooooo_ unlike HTML, which looks gibberish to the untrained eyes.
+
+Today, people favor Markdown for its readability (when viewed as a plain text)
+and its simplicity. This allows even visitors that uses ancient PCs for _surfing the web_ to access
+our website.
 
 Let's take a look at a couple of examples.
 
@@ -49,43 +76,37 @@ A typical html document would look like this:
     <link rel="stylesheet" href="style.min.css"/>
   </head>
   <body>
-  <h1 id="markdown">Markdown
-  </h1>
+    <h1 id="markdown">Markdown</h1>
 
-  <h2 id="what-is-it-">What is it?
-  </h2>
+    <h2 id="what-is-it-">What is it?</h2>
 
-  <p>Markdown files (.md) are documents that are easy to view, whether
-  you view it on a browser (think: website) or using text editor.
-  This means that you can open any markdown files with programs
-  such as notepad, and still be able to read it easily, as opposed
-  to reading (.html) files.
-  </p>
+    <p>Markdown files (.md) are documents that are easy to view, whether
+    you view it on a browser (think: website) or using text editor.
+    This means that you can open any markdown files with programs
+    such as notepad, and still be able to read it easily, as opposed
+    to reading (.html) files.
+    </p>
   </body>
 </html>
 ```
 
-If you are familiar with html, you know immediately that what's really
-important is just the heading: **`Markdown`**, the sub-heading, **`What is it?`**, and
-the body of the paragraph surrounded by `<p>...</p>`.
+Now, let's compare it with Markdown, using the same content.
 
-Now, let's compare it to Markdown.
-
-A typical Markdown document looks like this.
 ```
 Markdown
 ========
 
-Back to [Index](index.html#-markdown-markdown-html-)
-
 What is it?
 -----------
 
-Markdown files (.md) are documents that are easy to view, whether
-you view it on a browser (like Firefox) or using text editor (like Notepad).
-This allows even visitors that uses ancient PCs for _surfing the web_ to access
-our website.
+Markdown files (.md) are documents that are easy to view,
+whether you view it on a browser (like Firefox) or
+using text editor (like Notepad).
+This allows even visitors that uses ancient PCs
+for _surfing the web_ to access our website.
 ```
+
+Which one would **you** rather read?
 
 See how different it is between the two? The former (HTML) contains lots
 of so-called "HTML Tags" decorating the whole document. While easier
@@ -122,10 +143,10 @@ Therefore, don't take Markdown as another language, but rather as a way you shou
 Keeping that in mind, how would you write a title in order to distinguish it
 from other texts?
 
-Let that sink for a second.
+We've seen from the example that this can be achieved by writing the title
+and putting underline below it.
 
-What about writing the title, and putting some sort of underline below it?
-Write something like this.
+In Markdown, you can write headings like this.
 
 ```
 Title

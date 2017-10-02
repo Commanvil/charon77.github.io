@@ -1,29 +1,47 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="style.min.css"/></head><body><h1 id="markdown-spend-more-time-on-writing-not-formatting">Markdown - Spend More Time on Writing, Not Formatting</h1>
-<p>Back to <a href="index.html#-markdown-markdown-html-">Index</a></p>
-<p>Humans are always about writings, ever since historical times.
-Even in the current digital age, writings stay relevant on The Internet.
-In this section, we will cover a document format called Markdown, that
-is easy to write, looks nice in both browsers and text editors, and
-hassle-free.</p>
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="style.min.css"/></head><body><h1 id="how-to-write-blogs-without-any-code-a-beginner-s-guide-to-markdown">How to write blogs without any code: A Beginner’s guide to Markdown</h1>
+<p><em>Back to <a href="index.html#-markdown-markdown-html-">Index</a></em></p>
+<p>Have you ever wanted to make a blog?</p>
+<p>We all do. Yet, making websites is not for everyone.</p>
+<p>Some of you might be using Wordpress or Blogspot. But while they do have their
+own benefits, </p>
+<p>What if you want to spend <strong>less</strong> time setting up Wordpress,
+or configuring Blospot, and <strong>more</strong> on <em>actually</em> writing content?</p>
+<h5 id="if-you-can-write-in-notepad-you-can-make-a-blog-">If you can write in Notepad, you can make a blog.</h5>
+<p>And I’m going to show how with all of you right now.</p>
+<p>In this article you’ll learn:</p>
+<ul>
+<li>What is Markdown, and how it makes anything easier</li>
+<li>How to write in Markdown (it’s very easy, I promise.)</li>
+</ul>
+<p>In the next article, you will also learn
+how to publish websites for free with Github, so that
+you can share the link to everyone else in the world! <em>(coming soon)</em></p>
 <h2 id="motivation">Motivation</h2>
-<p>Imagine writing website pages. How would you normally do it? A bunch of
-html, links here and there, css files spread all over. What if, maybe some
-point in life you decided to use frameworks, such as Bootstrap. Things
-would not go well, when you have to edit pages after pages, adding
-css files to each and every files, assigning classes to <code>&lt;div&gt;</code>s and what-not.</p>
-<p>Wouldn’t it be nice if we can spend more time <strong>actually</strong> write content, and
-not figuring out where the closing <code>&lt;/div&gt;</code> tags are?</p>
-<p>Markdown solves this problem.</p>
-<p>Markdown, on the other hand contains just the document and a few other things;
-not much. This is so unlike html documents which contains lots unimportant text
-that are not content, but have to be there in order to have <em>nice display</em>.</p>
-<h2 id="what-is-it-">What is it?</h2>
-<p>Markdown files (.md) are documents that are easy to view, whether
-you view it on a browser (like Firefox) or using text editor (like Notepad).
-This allows even visitors that uses ancient PCs for <em>surfing the web</em> to access
+<p>You’re an aspiring writer. Maybe you want to tell people how well
+that sushi restaurant you just visited, or you want to review a brand new
+camera of yours.</p>
+<p>You wanted to write something that people can share on Facebook, you want
+to put pictures in it, and you need to be able to write it anywhere
+you bring your computers to.</p>
+<p>For some of you <em>tech savvy</em> readers, you might just write in <strong>HTML</strong> and <strong>CSS</strong>.
+But what if, maybe, you don’t know how to write in HTML? Maybe you
+don’t have time to learn it, and to be fair, HTML is <em>kind of</em> complicated. Some
+even argue: <strong>CSS is the worst</strong>.</p>
+<p>But here’s the deal. If you have no idea what <strong>HTML</strong> and <strong>CSS</strong>
+are, don’t worry, we won’t be needing them.</p>
+<p>To reiterate: with Markdown, we can finally spend more time <strong>actually</strong> writing content.</p>
+<h4 id="how-does-markdown-do-anything-differently-">How does Markdown do anything differently?</h4>
+<p>Unlike the more difficult HTML or CSS, Markdown, on the other hand contains <strong>just</strong>
+the document and nothing else. This is achieved by having <em>markups</em> that looks
+natural to the human eyes (hence the name Markdown).</p>
+<p>Formally speaking, markdown files (.md) are documents that are <em>easy to view</em>, whether
+you view it on a browser (like Firefox) or using text editor (like Notepad).</p>
+<p>Let that sink in for a moment.</p>
+<p>With Markdown, you can see a website <em>nicely</em> even with just a text browser.
+This is <em>sooooooo</em> unlike HTML, which looks gibberish to the untrained eyes.</p>
+<p>Today, people favor Markdown for its readability (when viewed as a plain text)
+and its simplicity. This allows even visitors that uses ancient PCs for <em>surfing the web</em> to access
 our website.</p>
-<p>Even today, people still favor Markdown for its readability (when viewed as a plain text)
-and its simplicity.</p>
 <p>Let’s take a look at a couple of examples.</p>
 <p>A typical html document would look like this:</p>
 <pre><code class="lang-html"><div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
@@ -33,41 +51,35 @@ and its simplicity.</p>
     <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style.min.css&quot;</span><span class="nt">/&gt;</span>
   <span class="nt">&lt;/head&gt;</span>
   <span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">&quot;markdown&quot;</span><span class="nt">&gt;</span>Markdown
-  <span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">&quot;markdown&quot;</span><span class="nt">&gt;</span>Markdown<span class="nt">&lt;/h1&gt;</span>
 
-  <span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">&quot;what-is-it-&quot;</span><span class="nt">&gt;</span>What is it?
-  <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">&quot;what-is-it-&quot;</span><span class="nt">&gt;</span>What is it?<span class="nt">&lt;/h2&gt;</span>
 
-  <span class="nt">&lt;p&gt;</span>Markdown files (.md) are documents that are easy to view, whether
-  you view it on a browser (think: website) or using text editor.
-  This means that you can open any markdown files with programs
-  such as notepad, and still be able to read it easily, as opposed
-  to reading (.html) files.
-  <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Markdown files (.md) are documents that are easy to view, whether
+    you view it on a browser (think: website) or using text editor.
+    This means that you can open any markdown files with programs
+    such as notepad, and still be able to read it easily, as opposed
+    to reading (.html) files.
+    <span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
 </code></pre>
-<p>If you are familiar with html, you know immediately that what’s really
-important is just the heading: <strong><code>Markdown</code></strong>, the sub-heading, <strong><code>What is it?</code></strong>, and
-the body of the paragraph surrounded by <code>&lt;p&gt;...&lt;/p&gt;</code>.</p>
-<p>Now, let’s compare it to Markdown.</p>
-<p>A typical Markdown document looks like this.</p>
+<p>Now, let’s compare it with Markdown, using the same content.</p>
 <pre><code>Markdown
 ========
-
-Back to [Index](index.html#-markdown-markdown-html-)
 
 What is it?
 -----------
 
-Markdown files (.md) are documents that are easy to view, whether
-you view it on a browser (like Firefox) or using text editor (like Notepad).
-This allows even visitors that uses ancient PCs for _surfing the web_ to access
-our website.
-</code></pre><p>See how different it is between the two? The former (HTML) contains lots
+Markdown files (.md) are documents that are easy to view,
+whether you view it on a browser (like Firefox) or
+using text editor (like Notepad).
+This allows even visitors that uses ancient PCs
+for _surfing the web_ to access our website.
+</code></pre><p>Which one would <strong>you</strong> rather read?</p>
+<p>See how different it is between the two? The former (HTML) contains lots
 of so-called “HTML Tags” decorating the whole document. While easier
 for computers to read, we struggle to understand what the document is
 about.</p>
@@ -91,9 +103,9 @@ is just a Notepad? How would you write it so that it looks nice?</p>
 <h3 id="heading">Heading</h3>
 <p>Keeping that in mind, how would you write a title in order to distinguish it
 from other texts?</p>
-<p>Let that sink for a second.</p>
-<p>What about writing the title, and putting some sort of underline below it?
-Write something like this.</p>
+<p>We’ve seen from the example that this can be achieved by writing the title
+and putting underline below it.</p>
+<p>In Markdown, you can write headings like this.</p>
 <pre><code>Title
 =====
 
