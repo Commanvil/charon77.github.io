@@ -34,7 +34,7 @@ are, don’t worry, we won’t be needing them.</p>
 <p>Unlike the more difficult HTML or CSS, Markdown, on the other hand contains <strong>just</strong>
 the document and nothing else. This is achieved by having <em>markups</em> that looks
 natural to the human eyes (hence the name Markdown).</p>
-<p>Formally speaking, markdown files (.md) are documents that are <em>easy to view</em>, whether
+<p>Formally speaking, markdown files <code>.md</code> are documents that are <em>easy to view</em>, whether
 you view it on a browser (like Firefox) or using text editor (like Notepad).</p>
 <p>Let that sink in for a moment.</p>
 <p>With Markdown, you can see a website <em>nicely</em> even with just a text browser.
@@ -123,13 +123,12 @@ Underlines using = for title, - for section header.
 it becomes to write in Markdown?</p>
 <p>Now, let’s dig deeper.</p>
 <p>Headings marks the beginning of a section.</p>
-<p>There are two ways to make headings.</p>
-<ol>
-<li><p>Equal sign (=) or Dash sign (-) at the <em>bottom</em> of the heading.</p>
+<p>There are <strong>two</strong> ways to make headings.</p>
+<h4 id="first-way-equal-sign-or-dash-sign-at-the-_bottom_-of-the-heading-">First way: Equal sign <code>=</code> or Dash sign <code>-</code> at the <em>bottom</em> of the heading.</h4>
 <p>Personally, I prefer this method as it looks clearer in plaintext.
 You can use this format <strong>only</strong> for Heading 1 and Heading 2. For
 levels below it, revert to the # format.</p>
-<p><strong>Example:</strong></p>
+<h5 id="example-">Example:</h5>
 <pre><code>Heading 1
 =========    
 Some text over here.
@@ -144,22 +143,21 @@ The quick brown fox jumps over the lazy dog.
 than the text. This demonstrates what happens when this is violated.
 Even though it appears well here, it&#39;s use is discouraged. Besides, it
 looks bad.
-</code></pre><p><strong>Result:</strong></p>
+</code></pre><h5 id="result-">Result:</h5>
 <blockquote>
 <h1 id="heading-1">Heading 1</h1>
 <p>Some text over here</p>
 <h2 id="heading-2">Heading 2</h2>
 <h2 id="the-quick-brown-fox-jumps-over-the-lazy-dog-">The quick brown fox jumps over the lazy dog.</h2>
 </blockquote>
-</li>
-<li><p>Hashes (#) can also be used before the heading. Think about it.
-If you put any sort of symbol before a text, you would easily find it,
+<h4 id="second-way-hashes-can-also-be-used-before-the-heading-think-about-it-">Second way: Hashes <code>#</code> can also be used before the heading. Think about it.</h4>
+<p>If you put any sort of symbol before a text, you would easily find it,
 as you only need to skim through the first character.</p>
 <p>In Markdown, this is useful when your heading is more than two levels deep,
-as = and - can only be used for level 1 and level 2 respectively.
+as <code>=</code> and <code>-</code> can only be used for level 1 and level 2 respectively.
 Hashes can mark headings from 1 to 6, depending on how many hashes
 do you use.</p>
-<p><strong>Example:</strong></p>
+<h5 id="example-">Example:</h5>
 <pre><code># This is heading 1
 Some text.
 ## Heading 2
@@ -167,7 +165,7 @@ Some text.
 ...
 ###### Heading 6
 More text!
-</code></pre><p><strong>Which yields to:</strong></p>
+</code></pre><h5 id="which-yields-to-">Which yields to:</h5>
 <blockquote>
 <h1 id="this-is-heading-1">This is heading 1</h1>
 <p>Some text.</p>
@@ -177,8 +175,6 @@ More text!
 <h6 id="heading-6">Heading 6</h6>
 <p>More text!</p>
 </blockquote>
-</li>
-</ol>
 <p>Amazing, right? Did you get the intuitive feeling? Let’s move along.</p>
 <h3 id="paragraphs">Paragraphs</h3>
 <p>How would you write paragraphs, say, in a word processor? You separate

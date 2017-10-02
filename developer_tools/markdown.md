@@ -53,7 +53,7 @@ Unlike the more difficult HTML or CSS, Markdown, on the other hand contains **ju
 the document and nothing else. This is achieved by having _markups_ that looks
 natural to the human eyes (hence the name Markdown).
 
-Formally speaking, markdown files (.md) are documents that are _easy to view_, whether
+Formally speaking, markdown files `.md` are documents that are _easy to view_, whether
 you view it on a browser (like Firefox) or using text editor (like Notepad).
 
 Let that sink in for a moment.
@@ -176,71 +176,72 @@ Now, let's dig deeper.
 
 Headings marks the beginning of a section.
 
-There are two ways to make headings.
+There are **two** ways to make headings.
 
-1.  Equal sign (=) or Dash sign (-) at the _bottom_ of the heading.
+#### First way: Equal sign `=` or Dash sign `-` at the _bottom_ of the heading.
     
-    Personally, I prefer this method as it looks clearer in plaintext.
-    You can use this format **only** for Heading 1 and Heading 2. For
-    levels below it, revert to the \# format.
+Personally, I prefer this method as it looks clearer in plaintext.
+You can use this format **only** for Heading 1 and Heading 2. For
+levels below it, revert to the \# format.
     
-    **Example:**
+##### Example:
 ```
-    Heading 1
-    =========    
-    Some text over here.
-    
-    Heading 2
-    ----------
-    
-    The quick brown fox jumps over the lazy dog.
-    --------------------------------------------
-    
-    *Note: in some parser, the line below the heading must not be shorter
-    than the text. This demonstrates what happens when this is violated.
-    Even though it appears well here, it's use is discouraged. Besides, it
-    looks bad.
-```
-    **Result:**
-    > Heading 1
-    > =========    
-    > Some text over here
-    > 
-    > Heading 2
-    > ----------
-    > 
-    > The quick brown fox jumps over the lazy dog.
-    > --------------------------------------------
+Heading 1
+=========    
+Some text over here.
 
-2.  Hashes (\#) can also be used before the heading. Think about it.
-    If you put any sort of symbol before a text, you would easily find it,
-    as you only need to skim through the first character.
-    
-    In Markdown, this is useful when your heading is more than two levels deep,
-    as = and - can only be used for level 1 and level 2 respectively.
-    Hashes can mark headings from 1 to 6, depending on how many hashes
-    do you use.
+Heading 2
+----------
 
-    **Example:**
+The quick brown fox jumps over the lazy dog.
+--------------------------------------------
+
+*Note: in some parser, the line below the heading must not be shorter
+than the text. This demonstrates what happens when this is violated.
+Even though it appears well here, it's use is discouraged. Besides, it
+looks bad.
 ```
-    # This is heading 1
-    Some text.
-    ## Heading 2
-    ### Heading 3
-    ...
-    ###### Heading 6
-    More text!
+
+##### Result:
+> Heading 1
+> =========    
+> Some text over here
+> 
+> Heading 2
+> ----------
+> 
+> The quick brown fox jumps over the lazy dog.
+> --------------------------------------------
+
+#### Second way: Hashes `#` can also be used before the heading. Think about it.
+If you put any sort of symbol before a text, you would easily find it,
+as you only need to skim through the first character.
+
+In Markdown, this is useful when your heading is more than two levels deep,
+as `=` and `-` can only be used for level 1 and level 2 respectively.
+Hashes can mark headings from 1 to 6, depending on how many hashes
+do you use.
+
+##### Example:
+```
+# This is heading 1
+Some text.
+## Heading 2
+### Heading 3
+...
+###### Heading 6
+More text!
 ```
     
-    **Which yields to:**
-    
-    > # This is heading 1
-    > Some text.
-    > ## Heading 2
-    > ### Heading 3
-    > ...
-    > ###### Heading 6
-    > More text!
+##### Which yields to:
+
+> # This is heading 1
+> Some text.
+> ## Heading 2
+> ### Heading 3
+> ...
+> ###### Heading 6
+> More text!
 
 Amazing, right? Did you get the intuitive feeling? Let's move along.
 
