@@ -405,34 +405,6 @@ If you want, you can surround the text with quotation marks `"` like so:
 > -- John Doe
 
 
-### Code Highlighting
-
-You can put codes and have highlighting by using three backticks (\`\`\`)
-followed by the language. Then put your code on a new line. Finally,
-end by using three backticks (\`\`\`).
-
-**Example:**
-
-```
-```html
-<body>
-  <p class="caption">Hello</p>
-</body>
-``````
-
-**Result:**
-
-```html
-<body>
- <p class="caption">Hello</p>
-</body>
-```
-
-Please note that language support depends on the highlighting engine
-being used. If supported, the engine turns codes into the display format,
-for example HTML in its "prettified" form. CSS is usually added so that
-the browser shows the code in colors.
-
 ### Links
 When we write documents, mainly websites, linking other pages is important.
 Markdown provides various ways to write links.
@@ -464,6 +436,34 @@ There are several search engines. Namely [Bing][bing], [Google](http://google.co
 
 [bing]: http://bing.com
 [100]: http://yahoo.com
+
+### Code Highlighting
+
+You can put codes and have highlighting by using three backticks (\`\`\`)
+followed by the language. Then put your code on a new line. Finally,
+end by using three backticks (\`\`\`).
+
+**Example:**
+
+```
+```html
+<body>
+  <p class="caption">Hello</p>
+</body>
+``````
+
+**Result:**
+
+```html
+<body>
+ <p class="caption">Hello</p>
+</body>
+```
+
+Please note that language support depends on the highlighting engine
+being used. If supported, the engine turns codes into the display format,
+for example HTML in its "prettified" form. CSS is usually added so that
+the browser shows the code in colors.
 
 Conclusion
 ----------
