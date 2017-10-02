@@ -5,13 +5,13 @@ _Back to [Index](../index.html#-markdown-markdown-html-)_
 
 Have you ever wanted to make a blog?
 
-We all do. Yet, making websites is not for everyone.
-
-Some of you might be using Wordpress or Blogspot. But while they do have their
-own benefits, 
+We all do. Yet, making websites is not for everyone. Some of you
+might already be using Wordpress or Blogspot. But they do come
+with their own cost: they're a bit tricky to configure, and they're
+an overkill if all you need is writing content.
 
 What if you want to spend **less** time setting up Wordpress,
-or configuring Blospot, and **more** on _actually_ writing content?
+or configuring Blogspot, and **more** on _actually_ writing content?
 
 ##### If you can write in Notepad, you can make a blog.
 
