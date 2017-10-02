@@ -54,7 +54,7 @@ gulp.task('md', function(){
   return gulp.src(globMarkdown)
     .pipe(markdown(opts))
     .pipe(wrapper({
-      header: '<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="style.min.css"/></head><body>',
+      header: '<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="style.min.css"/><link rel="stylesheet" href="../style.min.css"/></head><body>',
       footer: '</body></html>\n'
       
     }))
