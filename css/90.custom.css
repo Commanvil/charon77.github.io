@@ -52,3 +52,18 @@ body {
 		margin: 0 auto;
 	}
 }
+
+blockquote {
+	margin-left: 0;
+	margin-right: 0;
+	background-color: #fffefa;
+	border-left: 8px solid #fee79a;
+}
+
+@media screen and (min-width: 48rem)
+{
+	blockquote {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
