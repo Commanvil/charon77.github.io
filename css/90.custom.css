@@ -7,6 +7,23 @@ h6
   text-align: left;
 }
 
+h5,
+h6
+{
+	text-align: center;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+@media screen and (min-width: 48rem)
+{
+	h5,
+	h6
+	{
+		text-align: initial;
+	}
+}
+
 /* Thickens heading border */
 h1,
 h2,
@@ -25,9 +42,13 @@ pre {
 	background: #333;
 }
 
-@media screen and (max-width: 48rem)
-{
-  body {
+body {
     margin: 0 0.3em;
-  }
+}
+
+@media screen and (min-width: 48rem)
+{
+	body {
+		margin: 0 auto;
+	}
 }
