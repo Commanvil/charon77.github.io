@@ -150,7 +150,8 @@ would you write it in Notepad it so that it looks nice?
 Therefore, don't take Markdown as another language, but rather as a way you should
 **always** write in plain text
 
-### Heading
+Heading
+-------
 
 Keeping that in mind, how would you write a title in order to distinguish it
 from other texts?
@@ -291,7 +292,8 @@ empty line that comes before it.
 
 It's that easy!
 
-### Lists
+Lists
+-----
 
 Lists are useful to convey several information that are
 related. There are two types of them: bullet point
@@ -340,7 +342,8 @@ How to write:
 ```
 
 
-### Blockquote
+Blockquote
+----------
 
 Sometimes, you might find the need to quote someone else,
 either their post, the books they've written, etc.
@@ -405,7 +408,9 @@ If you want, you can surround the text with quotation marks `"` like so:
 > -- John Doe
 
 
-### Links
+Links
+-----
+
 When we write documents, mainly websites, linking other pages is important.
 Markdown provides various ways to write links.
 
@@ -437,7 +442,8 @@ There are several search engines. Namely [Bing][bing], [Google](http://google.co
 [bing]: http://bing.com
 [100]: http://yahoo.com
 
-### Code Highlighting
+Code Highlighting
+-----------------
 
 You can put codes and have highlighting by using three backticks (\`\`\`)
 followed by the language. Then put your code on a new line. Finally,
