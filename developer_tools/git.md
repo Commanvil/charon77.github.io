@@ -1,7 +1,7 @@
 Git - The Ultimate Undo Tool for Collaborative Projects
 ========================================================
 
-Back to [Index](index.html#-markdown-markdown-html-)
+_Back to [Index](../index.html#-markdown-markdown-html-)_
 
 Collaborating codes can be hard, and while using flashdrives to 
 copy codes can work, there are lots of concerns, like: what if

@@ -1,7 +1,7 @@
 How to write blogs without any code: A Beginner’s guide to Markdown
 ===================================================================
 
-_Back to [Index](index.html#-markdown-markdown-html-)_
+_Back to [Index](../index.html#-markdown-markdown-html-)_
 
 Have you ever wanted to make a blog?
 
@@ -386,6 +386,12 @@ To write a literal dash, we type the dash twice (\-\-)
 >
 > -- John Doe
 
+If you want, you can surround the text with quotation marks `"` like so:
+
+> "Doe not panic!"
+>
+> -- John Doe
+
 
 ### Code Highlighting
 
@@ -457,12 +463,14 @@ Of course, this article barely scratches the surface. There are more
 advanced resources you can find as you progress, like tables, Github
 Flavored Markup (GFM), and many more that we did not cover.
 
+By the way, this article references [this cheatsheet by adam-p][1] 
+and [this official guide from github.com (PDF)][2].
+So, check them out as well as resources you can find
+online to further improve your skills.
+
+
 We hope this article serves as a stepping stone for you to write in
 Markdown.
-
-Make sure to checkout [this][1] and [this(PDF)][2] for more information,
-as well as resources you can find online to further improve your skills.
-
 
 [1]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [2]: https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf

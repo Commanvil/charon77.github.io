@@ -4,6 +4,8 @@ const wrapper = require('gulp-wrapper');
 const flatten = require('gulp-flatten');
 const writeGood = require('write-good')
 const child_process = require('child_process')
+const replace = require('gulp-replace')
+const path = require('path')
 
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-minify-css')
@@ -52,14 +54,35 @@ gulp.task('md', function(){
   }
   
   return gulp.src(globMarkdown)
+    //.pipe(markdown(opts))
     .pipe(markdown(opts))
     .pipe(wrapper({
-      header: '<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="style.min.css"/><link rel="stylesheet" href="../style.min.css"/></head><body>',
+      header: '<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="@style.min.css"/></head><body>',
       footer: '</body></html>\n'
       
     }))
+    .pipe(directivePostProcess())
     .pipe(gulp.dest('.'))
 });
 
 
 gulp.task('default', [ 'md', 'css' ]);
+
+function directivePostProcess () {
+  return replace('@style.min.css', relativePathReplace('style.min.css'))
+}
+
+
+function relativePathReplace (fileName) {
+
+  function replaceDelegate ()  {
+    let file = this.file
+
+    let relativePathToHome = path.dirname( path.relative(file.path, file.base) )
+
+    let relativePathToFile = path.join(relativePathToHome, fileName)
+    return relativePathToFile
+  }
+
+  return replaceDelegate
+}
