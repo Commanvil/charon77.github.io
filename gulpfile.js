@@ -61,17 +61,13 @@ gulp.task('md', function(){
       footer: '</body></html>\n'
       
     }))
-    .pipe(directivePostProcess())
+    .pipe(replace('@style.min.css', relativePathReplace('style.min.css')))
+    .pipe(replace('/img/stock', relativePathReplace('img/stock')))
     .pipe(gulp.dest('.'))
 });
 
 
 gulp.task('default', [ 'md', 'css' ]);
-
-function directivePostProcess () {
-  return replace('@style.min.css', relativePathReplace('style.min.css'))
-}
-
 
 function relativePathReplace (fileName) {
 

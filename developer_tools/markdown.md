@@ -77,6 +77,8 @@ you view it on a browser (like Firefox) or using text editor (like Notepad).
 
 ###### Let that sink in for a moment.
 
+![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg "Rawrr")
+
 With Markdown, you can see a website _nicely_ even with just a text browser.
 This is _sooooooo_ unlike HTML, which looks gibberish to the untrained eyes.
 
