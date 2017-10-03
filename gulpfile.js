@@ -1,16 +1,21 @@
 const gulp = require('gulp')
-const markdown = require('gulp-markdown');
+//const markdown = require('gulp-markdown');
+const markdown = require('gulp-remarkable')
+
 const wrapper = require('gulp-wrapper');
 const flatten = require('gulp-flatten');
 const writeGood = require('write-good')
 const child_process = require('child_process')
 const replace = require('gulp-replace')
 const path = require('path')
+const pygmentize = require('pygmentize-bundled')
+const deasync = require('deasync')
 
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-minify-css')
 
 const globMarkdown = ['./**/*.md', '!./node_modules/**'];
+
 
 /*
 const mdWatcher = gulp.watch(globMarkdown, ['md'])
@@ -34,36 +39,28 @@ gulp.task('css', function(){
   
 })
 
+
+
 gulp.task('md', function(){
   //const opts = {title: 'File $BASENAME in $DIRNAME', stylesheet: 'css/modest.css'};
   const opts = {
-    gfm: true,
-    tables: true,
-    breaks: false,
-    pedantic: false,
-    sanitize: false,
-    smartLists: true,
-    smartypants: true,
-    highlight: function (code, lang, callback) {
-      if (lang)
-      {
-        require('pygmentize-bundled')({ lang: lang, format: 'html' }, code, function (err, result) {
-          callback(err, result.toString());
-        })
-      } else {
-        callback(null, code)
-      }
+    remarkableOptions: {
+        typographer: true,
+        highlight: highlighter
     }
+
   }
   
   return gulp.src(globMarkdown)
     //.pipe(markdown(opts))
     .pipe(markdown(opts))
+    
     .pipe(wrapper({
       header: '<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="@style.min.css"/></head><body>',
       footer: '</body></html>\n'
       
     }))
+    
     .pipe(replace('@style.min.css', relativePathReplace('style.min.css')))
     .pipe(replace('/img/stock', relativePathReplace('img/stock')))
     .pipe(gulp.dest('.'))
@@ -84,4 +81,29 @@ function relativePathReplace (fileName) {
   }
 
   return replaceDelegate
+}
+
+function highlighter (code, lang) {
+      if (lang)
+      {
+        return syncPygmentize(code,lang)
+      } else {
+          return ''
+      }
+}
+
+function syncPygmentize(code, lang) {
+  let error = undefined
+  let result = undefined
+  pygmentize({ lang: lang, format: 'html' }, code, (err, res)=>{
+    error=err
+    result =res
+    if (err) {
+      throw err
+    }
+  })
+
+  deasync.loopWhile (()=>{return result == undefined})
+  return result.toString()
+  
 }
