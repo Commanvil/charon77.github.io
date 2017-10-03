@@ -1,4 +1,5 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../style.min.css"/></head><body><h1 id="how-to-write-blogs-without-any-code-a-beginner-s-guide-to-markdown">How to write blogs without any code: A Beginner’s guide to Markdown</h1>
+<p><img src="../img/stock/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg" alt="kingfisher bird blue"></p>
 <p><em>Back to <a href="../index.html#-markdown-markdown-html-">Index</a></em></p>
 <p>Have you ever wanted to make a blog?</p>
 <p>We all do. Yet, making websites is not for everyone. Some of you
@@ -24,8 +25,9 @@ you can share the link to everyone else in the world! <em>(coming soon)</em></p>
 <li><a href="#headings">Headings</a></li>
 <li><a href="#paragraphs">Paragraphs</a></li>
 <li><a href="#lists">Lists</a></li>
-<li><a href="#blockquote">Blockquote</a></li>
 <li><a href="#links">Links</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#blockquote">Blockquote</a></li>
 <li><a href="#code-highlighting">Code Highlighting</a></li>
 <li><a href="#conclusion">Conclusion</a></li>
 </ul>
@@ -249,6 +251,58 @@ The quick brown fox jumps over the lazy dog.</p>
 empty line that comes before it.</p>
 </blockquote>
 <p>It’s that easy!</p>
+<h2 id="links">Links</h2>
+<p>When we write documents, mainly websites, linking other pages is important.
+Markdown provides various ways to write links.</p>
+<p>The most common way is to simply put the link next to the text you want
+to show as the link. The example below links to this page as a relative
+link, meaning the file is in the current folder.</p>
+<pre><code>Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
+</code></pre><blockquote>
+<p>Introducing: <a href="markdown.html">Markdown</a>, the industry-standard format for writing articles!</p>
+</blockquote>
+<p>You can also link to other websites by using the full URL.</p>
+<pre><code>Need to [search](https://www.google.com) something?
+</code></pre><blockquote>
+<p>Need to <a href="https://www.google.com">search</a> something?</p>
+</blockquote>
+<p>Here are couple of examples, showing both direct link and separate linking
+in the reference.</p>
+<pre><code>There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
+
+[bing]: http://bing.com
+[100]: http://yahoo.com
+</code></pre><blockquote>
+<p>There are several search engines. Namely <a href="http://bing.com">Bing</a>, <a href="http://google.com">Google</a>, and <a href="http://yahoo.com">Yahoo</a>.</p>
+</blockquote>
+<h2 id="images">Images</h2>
+<p>If you know how to put links, you know how to put images.</p>
+<p>To put an image, just write ‘link’ to your image, and put an exclamation point <code>!</code>
+in front of it. Instead of link-text, the text in square brackets will now be the
+<code>[alt-text]</code>, that is, texts to display if the image, for some reason, doesn’t load.</p>
+<p>Here’s some examples.</p>
+<pre><code>This is a link:
+
+[surprised kitty](../img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+
+This is an image:
+
+![surprised kitty](../img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+
+This is an image with text that you can mouse-over.
+Go ahead, make it say &quot;Rawrr&quot;
+
+![surprised kitty](../img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg &quot;Rawrr&quot;)
+</code></pre><p>And what’s better than putting cats in your websites. Rawwr!</p>
+<blockquote>
+<p>This is a link:</p>
+<p><a href="../img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg">surprised kitty</a></p>
+<p>This is an image:</p>
+<p><img src="../img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg" alt="surprised kitty"></p>
+<p>This is an image with text that you can mouse-over.
+Go ahead, make it say “Rawrr”</p>
+<p><img src="../img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg" alt="surprised kitty" title="Rawrr"></p>
+</blockquote>
 <h2 id="lists">Lists</h2>
 <p>Lists are useful to convey several information that are
 related. There are two types of them: bullet point
@@ -332,30 +386,6 @@ Usually we put a dash (-) before the name, but when we type it like that,</p>
 <blockquote>
 <p>“Doe not panic!”</p>
 <p>– John Doe</p>
-</blockquote>
-<h2 id="links">Links</h2>
-<p>When we write documents, mainly websites, linking other pages is important.
-Markdown provides various ways to write links.</p>
-<p>The most common way is to simply put the link next to the text you want
-to show as the link. The example below links to this page as a relative
-link, meaning the file is in the current folder.</p>
-<pre><code>Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
-</code></pre><blockquote>
-<p>Introducing: <a href="markdown.html">Markdown</a>, the industry-standard format for writing articles!</p>
-</blockquote>
-<p>You can also link to other websites by using the full URL.</p>
-<pre><code>Need to [search](https://www.google.com) something?
-</code></pre><blockquote>
-<p>Need to <a href="https://www.google.com">search</a> something?</p>
-</blockquote>
-<p>Here are couple of examples, showing both direct link and separate linking
-in the reference.</p>
-<pre><code>There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
-
-[bing]: http://bing.com
-[100]: http://yahoo.com
-</code></pre><blockquote>
-<p>There are several search engines. Namely <a href="http://bing.com">Bing</a>, <a href="http://google.com">Google</a>, and <a href="http://yahoo.com">Yahoo</a>.</p>
 </blockquote>
 <h2 id="code-highlighting">Code Highlighting</h2>
 <p>You can put codes and have highlighting by using three backticks (```)

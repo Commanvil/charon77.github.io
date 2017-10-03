@@ -1,6 +1,8 @@
 How to write blogs without any code: A Beginner’s guide to Markdown
 ===================================================================
 
+![kingfisher bird blue](/img/stock/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg)
+
 _Back to [Index](../index.html#-markdown-markdown-html-)_
 
 Have you ever wanted to make a blog?
@@ -32,8 +34,9 @@ you can share the link to everyone else in the world! _(coming soon)_
 - [Headings](#headings)
 - [Paragraphs](#paragraphs)
 - [Lists](#lists)
-- [Blockquote](#blockquote)
 - [Links](#links)
+- [Images](#images)
+- [Blockquote](#blockquote)
 - [Code Highlighting](#code-highlighting)
 - [Conclusion](#conclusion)
 
@@ -340,6 +343,82 @@ empty line that comes before it.
 
 It's that easy!
 
+Links
+-----
+
+When we write documents, mainly websites, linking other pages is important.
+Markdown provides various ways to write links.
+
+The most common way is to simply put the link next to the text you want
+to show as the link. The example below links to this page as a relative
+link, meaning the file is in the current folder.
+```
+Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
+```
+> Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
+
+You can also link to other websites by using the full URL.
+```
+Need to [search](https://www.google.com) something?
+```
+> Need to [search](https://www.google.com) something?
+
+Here are couple of examples, showing both direct link and separate linking
+in the reference.
+```
+There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
+
+[bing]: http://bing.com
+[100]: http://yahoo.com
+```
+
+> There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
+
+[bing]: http://bing.com
+[100]: http://yahoo.com
+
+Images
+------
+
+If you know how to put links, you know how to put images.
+
+To put an image, just write 'link' to your image, and put an exclamation point `!`
+in front of it. Instead of link-text, the text in square brackets will now be the
+`[alt-text]`, that is, texts to display if the image, for some reason, doesn't load.
+
+Here's some examples.
+
+```
+This is a link:
+
+[surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+
+This is an image:
+
+![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+
+This is an image with text that you can mouse-over.
+Go ahead, make it say "Rawrr"
+
+![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg "Rawrr")
+```
+
+And what's better than putting cats in your websites. Rawwr!
+
+> This is a link:
+> 
+> [surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+
+> This is an image:
+> 
+> ![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+
+> This is an image with text that you can mouse-over.
+> Go ahead, make it say "Rawrr"
+> 
+> ![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg "Rawrr")
+
+
 Lists
 -----
 
@@ -454,41 +533,6 @@ If you want, you can surround the text with quotation marks `"` like so:
 > "Doe not panic!"
 >
 > -- John Doe
-
-
-Links
------
-
-When we write documents, mainly websites, linking other pages is important.
-Markdown provides various ways to write links.
-
-The most common way is to simply put the link next to the text you want
-to show as the link. The example below links to this page as a relative
-link, meaning the file is in the current folder.
-```
-Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
-```
-> Introducing: [Markdown](markdown.html), the industry-standard format for writing articles!
-
-You can also link to other websites by using the full URL.
-```
-Need to [search](https://www.google.com) something?
-```
-> Need to [search](https://www.google.com) something?
-
-Here are couple of examples, showing both direct link and separate linking
-in the reference.
-```
-There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
-
-[bing]: http://bing.com
-[100]: http://yahoo.com
-```
-
-> There are several search engines. Namely [Bing][bing], [Google](http://google.com), and [Yahoo][100].
-
-[bing]: http://bing.com
-[100]: http://yahoo.com
 
 Code Highlighting
 -----------------
