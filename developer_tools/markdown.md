@@ -1,7 +1,7 @@
 How to write blogs without any code: A Beginner’s guide to Markdown
 ===================================================================
 
-![kingfisher bird blue](/img/stock/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg)
+![mug and laptop](/img/stock/pexels-photo-597331.jpeg)
 
 _Back to [Index](../index.html#-markdown-markdown-html-)_
 
