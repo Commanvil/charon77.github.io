@@ -72,11 +72,6 @@ gulp.task('md', function(){
     //.pipe(markdown(opts))
     .pipe(markdown(opts, (md=>{
       md.renderer.rules.heading_open = headingAnchorRendererPlugin
-      //md.use(headingAnchorRendererPlugin)
-      //console.log(md.renderer.rules.heading_open.toString())
-      //console.log(md.inline.ruler)
-      
-      //md.renderer.rules.push("headingAnchor", headingAnchorRendererPlugin)
     })))
     
     .pipe(wrapper({
