@@ -82,7 +82,7 @@ you view it on a browser (like Firefox) or using text editor (like Notepad).
 
 ###### Let that sink in for a moment.
 
-![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg "Rawrr")
+![surprised kitty](/img/stock/cat-pet-animal-domestic-104827.jpeg "Rawrr")
 
 With Markdown, you can see a website _nicely_ even with just a text editor.
 This is _sooooooo_ unlike HTML, which looks gibberish to the untrained eyes.
@@ -397,32 +397,32 @@ Here's some examples.
 ```
 This is a link:
 
-[surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+[surprised kitty](/img/stock/cat-pet-animal-domestic-104827.jpeg)
 
 This is an image:
 
-![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+![surprised kitty](/img/stock/cat-pet-animal-domestic-104827.jpeg)
 
 This is an image with text that you can mouse-over.
 Go ahead, make it say "Rawrr"
 
-![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg "Rawrr")
+![surprised kitty](/img/stock/cat-pet-animal-domestic-104827.jpeg "Rawrr")
 ```
 
 And what's better than putting cats in your websites. Rawwr!
 
 > This is a link:
 > 
-> [surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+> [surprised kitty](/img/stock/cat-pet-animal-domestic-104827.jpeg)
 
 > This is an image:
 > 
-> ![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg)
+> ![surprised kitty](/img/stock/cat-pet-animal-domestic-104827.jpeg)
 
 > This is an image with text that you can mouse-over.
 > Go ahead, make it say "Rawrr"
 > 
-> ![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg "Rawrr")
+> ![surprised kitty](/img/stock/cat-pet-animal-domestic-104827.jpeg "Rawrr")
 
 
 Lists
