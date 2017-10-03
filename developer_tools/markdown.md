@@ -25,6 +25,19 @@ In the next article, you will also learn
 how to publish websites for free with Github, so that
 you can share the link to everyone else in the world! _(coming soon)_
 
+###### Table of Contents
+
+- [Motivation](#motivation)
+- [Getting Started](#getting-started)
+- [Heading](#heading)
+- [Paragraphs](#paragraphs)
+- [Lists](#lists)
+- [Blockquote](#blockquote)
+- [Links](#links)
+- [Code Highlighting](#code-highlighting)
+- [Conclusion](#conclusion)
+
+
 Motivation
 -----------
 
