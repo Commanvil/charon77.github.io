@@ -29,7 +29,7 @@ you can share the link to everyone else in the world! _(coming soon)_
 
 - [Motivation](#motivation)
 - [Getting Started](#getting-started)
-- [Heading](#heading)
+- [Headings](#headings)
 - [Paragraphs](#paragraphs)
 - [Lists](#lists)
 - [Blockquote](#blockquote)
@@ -110,6 +110,12 @@ Let's take a look at a couple of examples.
 </html>
 ```
 
+If you're unfamiliar with HTML, you might struggle to read the content it's trying
+to present. Computers, on the other hand, will happily format them for you.
+
+It's not a problem until you realize that _you too_ have to read and **write** in
+HTML. Even web developers have trouble reading long lines of HTML.
+
 Now, let's compare it with Markdown, using the same content.
 
 ```
@@ -126,7 +132,7 @@ This allows even visitors that uses ancient PCs
 for _surfing the web_ to access our website.
 ```
 
-Which one would **you** rather read?
+Which one would **you** rather read (or write)?
 
 See how different it is between the two? The former (HTML) contains lots
 of so-called "HTML Tags" decorating the whole document. While easier
@@ -137,24 +143,32 @@ The latter (Markdown) looks much simpler and easier to read. There's no
 doubt even first-timers would have no difficulties understanding
 what the document is about.
 
+That being said, Markdown is **not** a replacement for HTML, rather a
+_teeny-tiny_ subset of it. However for most people that needs to write,
+Markdown is enough, and you don't need sophisticated tools to understand
+its content.
+
 Getting Started
 ---------------
 
 As simple as it is, you need to _write_ in Markdown to get familiar with
-it. There are many tools and other ways you can do that.
+it. While you don't really need any tool for that, you might find it
+more satisfying to see your Markdown _magically_ turns to pretty texts.
 
 Here are some online editor for you to quickly try Markdown:
 - http://markdownlivepreview.com
 - https://jbt.github.io/markdown-editor
 
-Now that you've picked your editor,
-the first step would be to familiarize yourself. If you have never seen
+If you can't try them now, don't worry. This article provides sample
+Markdown and results, so do follow along.
+
+The first step would be to familiarize yourself. If you have never seen
 Markdown before, don't be ashamed. It is a somewhat old format (but not forgotten).
 Make sure to have a good look on how Markdown looks like in the
 section above.
 
 
-##### Markdown tries to be as close as plain-text as possible.
+##### Markdown tries to be as close as plain text as possible.
 
 When trying Markdown, it is important to keep this in mind. When you
 encounter something you need to do, and you don't know how to do it, think: how
@@ -163,9 +177,14 @@ would you write it in Notepad it so that it looks nice?
 Therefore, don't take Markdown as another language, but rather as a way you should
 **always** write in plain text
 
-Heading
--------
+Headings
+--------
 
+Headings are important. It catches attention from the reader, provides 
+clue about what your writing is about, but most importantly: it is the
+first thing anyone sees.
+
+Now I've said before that Markdown tries to be as close as plain text as possible.
 Keeping that in mind, how would you write a title in order to distinguish it
 from other texts?
 
@@ -181,7 +200,7 @@ Title
 Lesson 1
 --------
 
-Underlines using = for title, - for section header.
+Here are some text in the first line of your blog.
 
 ```
 
@@ -193,10 +212,12 @@ which gives the following result:
 > Lesson 1
 > --------
 > 
-> Underlines using = for title, - for section header.
+> Here are some text in the first line of your blog.
 
 Sounds neat! You now know how to make `headings`! Do you see how natural
 it becomes to write in Markdown?
+
+Note how the Title uses `=` while the Section Header uses `-`.
 
 Now, let's dig deeper.
 
@@ -205,10 +226,10 @@ Headings marks the beginning of a section.
 There are **two** ways to make headings.
 
 #### First way: Equal sign `=` or Dash sign `-` at the _bottom_ of the heading.
-    
-Personally, I prefer this method as it looks clearer in plain text.
-You can use this format **only** for Heading 1 and Heading 2. For
-levels below it, revert to the \# format.
+
+Putting equal signs `=` marks the text above to be displayed in `h1` or the
+largest heading. A dash sign `-`, on the other hand, displays the text above
+in `h2`, which is smaller.
     
 ##### Example:
 ```
@@ -239,7 +260,14 @@ looks bad.
 > The quick brown fox jumps over the lazy dog.
 > --------------------------------------------
 
-#### Second way: Hashes `#` can also be used before the heading. Think about it.
+Personally, I prefer this method as it looks clearer in plain text.
+However, you can use this format **only** for Heading 1 and Heading 2.
+For levels below it, rever to the \# format below.
+
+#### Second way: Hashes `#` can also be used before the heading.
+
+Think about it.
+
 If you put any sort of symbol before a text, you would easily find it,
 as you only need to skim through the first character.
 
@@ -269,14 +297,19 @@ More text!
 > ###### Heading 6
 > More text!
 
-Amazing, right? Did you get the intuitive feeling? Let's move along.
+Note how the first and second heading looks **exactly** the same.
+
+Using equal signs `=` below the heading _is_ identical to using one `#`.
+
+Using dash signs `-` below the heading _is_ identical to using two `#`.
+
 
 ### Paragraphs
 
 How would you write paragraphs, say, in a word processor? You separate
 them with `enter`.
 
-Paragraphs:
+Rules for Paragraphs:
 - One or several lines of text becomes a single paragraph
 - A blank line separates paragraphs.
 

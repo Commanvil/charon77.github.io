@@ -21,7 +21,7 @@ you can share the link to everyone else in the world! <em>(coming soon)</em></p>
 <ul>
 <li><a href="#motivation">Motivation</a></li>
 <li><a href="#getting-started">Getting Started</a></li>
-<li><a href="#heading">Heading</a></li>
+<li><a href="#headings">Headings</a></li>
 <li><a href="#paragraphs">Paragraphs</a></li>
 <li><a href="#lists">Lists</a></li>
 <li><a href="#blockquote">Blockquote</a></li>
@@ -84,6 +84,10 @@ our website.</p>
 </pre></div>
 
 </code></pre>
+<p>If you’re unfamiliar with HTML, you might struggle to read the content it’s trying
+to present. Computers, on the other hand, will happily format them for you.</p>
+<p>It’s not a problem until you realize that <em>you too</em> have to read and <strong>write</strong> in
+HTML. Even web developers have trouble reading long lines of HTML.</p>
 <p>Now, let’s compare it with Markdown, using the same content.</p>
 <pre><code>Markdown
 ========
@@ -96,7 +100,7 @@ whether you view it on a browser (like Firefox) or
 using text editor (like Notepad).
 This allows even visitors that uses ancient PCs
 for _surfing the web_ to access our website.
-</code></pre><p>Which one would <strong>you</strong> rather read?</p>
+</code></pre><p>Which one would <strong>you</strong> rather read (or write)?</p>
 <p>See how different it is between the two? The former (HTML) contains lots
 of so-called “HTML Tags” decorating the whole document. While easier
 for computers to read, we struggle to understand what the document is
@@ -104,27 +108,37 @@ about.</p>
 <p>The latter (Markdown) looks much simpler and easier to read. There’s no
 doubt even first-timers would have no difficulties understanding
 what the document is about.</p>
+<p>That being said, Markdown is <strong>not</strong> a replacement for HTML, rather a
+<em>teeny-tiny</em> subset of it. However for most people that needs to write,
+Markdown is enough, and you don’t need sophisticated tools to understand
+its content.</p>
 <h2 id="getting-started">Getting Started</h2>
 <p>As simple as it is, you need to <em>write</em> in Markdown to get familiar with
-it. There are many tools and other ways you can do that.</p>
+it. While you don’t really need any tool for that, you might find it
+more satisfying to see your Markdown <em>magically</em> turns to pretty texts.</p>
 <p>Here are some online editor for you to quickly try Markdown:</p>
 <ul>
 <li><a href="http://markdownlivepreview.com">http://markdownlivepreview.com</a></li>
 <li><a href="https://jbt.github.io/markdown-editor">https://jbt.github.io/markdown-editor</a></li>
 </ul>
-<p>Now that you’ve picked your editor,
-the first step would be to familiarize yourself. If you have never seen
+<p>If you can’t try them now, don’t worry. This article provides sample
+Markdown and results, so do follow along.</p>
+<p>The first step would be to familiarize yourself. If you have never seen
 Markdown before, don’t be ashamed. It is a somewhat old format (but not forgotten).
 Make sure to have a good look on how Markdown looks like in the
 section above.</p>
-<h5 id="markdown-tries-to-be-as-close-as-plain-text-as-possible-">Markdown tries to be as close as plain-text as possible.</h5>
+<h5 id="markdown-tries-to-be-as-close-as-plain-text-as-possible-">Markdown tries to be as close as plain text as possible.</h5>
 <p>When trying Markdown, it is important to keep this in mind. When you
 encounter something you need to do, and you don’t know how to do it, think: how
 would you write it in Notepad it so that it looks nice?</p>
 <p>Therefore, don’t take Markdown as another language, but rather as a way you should
 <strong>always</strong> write in plain text</p>
-<h2 id="heading">Heading</h2>
-<p>Keeping that in mind, how would you write a title in order to distinguish it
+<h2 id="headings">Headings</h2>
+<p>Headings are important. It catches attention from the reader, provides 
+clue about what your writing is about, but most importantly: it is the
+first thing anyone sees.</p>
+<p>Now I’ve said before that Markdown tries to be as close as plain text as possible.
+Keeping that in mind, how would you write a title in order to distinguish it
 from other texts?</p>
 <p>We’ve seen from the example that this can be achieved by writing the title
 and putting underline below it.</p>
@@ -135,22 +149,23 @@ and putting underline below it.</p>
 Lesson 1
 --------
 
-Underlines using = for title, - for section header.
+Here are some text in the first line of your blog.
 </code></pre><p>which gives the following result:</p>
 <blockquote>
 <h1 id="title">Title</h1>
 <h2 id="lesson-1">Lesson 1</h2>
-<p>Underlines using = for title, - for section header.</p>
+<p>Here are some text in the first line of your blog.</p>
 </blockquote>
 <p>Sounds neat! You now know how to make <code>headings</code>! Do you see how natural
 it becomes to write in Markdown?</p>
+<p>Note how the Title uses <code>=</code> while the Section Header uses <code>-</code>.</p>
 <p>Now, let’s dig deeper.</p>
 <p>Headings marks the beginning of a section.</p>
 <p>There are <strong>two</strong> ways to make headings.</p>
 <h4 id="first-way-equal-sign-or-dash-sign-at-the-_bottom_-of-the-heading-">First way: Equal sign <code>=</code> or Dash sign <code>-</code> at the <em>bottom</em> of the heading.</h4>
-<p>Personally, I prefer this method as it looks clearer in plain text.
-You can use this format <strong>only</strong> for Heading 1 and Heading 2. For
-levels below it, revert to the # format.</p>
+<p>Putting equal signs <code>=</code> marks the text above to be displayed in <code>h1</code> or the
+largest heading. A dash sign <code>-</code>, on the other hand, displays the text above
+in <code>h2</code>, which is smaller.</p>
 <h5 id="example-">Example:</h5>
 <pre><code>Heading 1
 =========    
@@ -173,7 +188,11 @@ looks bad.
 <h2 id="heading-2">Heading 2</h2>
 <h2 id="the-quick-brown-fox-jumps-over-the-lazy-dog-">The quick brown fox jumps over the lazy dog.</h2>
 </blockquote>
-<h4 id="second-way-hashes-can-also-be-used-before-the-heading-think-about-it-">Second way: Hashes <code>#</code> can also be used before the heading. Think about it.</h4>
+<p>Personally, I prefer this method as it looks clearer in plain text.
+However, you can use this format <strong>only</strong> for Heading 1 and Heading 2.
+For levels below it, rever to the # format below.</p>
+<h4 id="second-way-hashes-can-also-be-used-before-the-heading-">Second way: Hashes <code>#</code> can also be used before the heading.</h4>
+<p>Think about it.</p>
 <p>If you put any sort of symbol before a text, you would easily find it,
 as you only need to skim through the first character.</p>
 <p>In Markdown, this is useful when your heading is more than two levels deep,
@@ -198,11 +217,13 @@ More text!
 <h6 id="heading-6">Heading 6</h6>
 <p>More text!</p>
 </blockquote>
-<p>Amazing, right? Did you get the intuitive feeling? Let’s move along.</p>
+<p>Note how the first and second heading looks <strong>exactly</strong> the same.</p>
+<p>Using equal signs <code>=</code> below the heading <em>is</em> identical to using one <code>#</code>.</p>
+<p>Using dash signs <code>-</code> below the heading <em>is</em> identical to using two <code>#</code>.</p>
 <h3 id="paragraphs">Paragraphs</h3>
 <p>How would you write paragraphs, say, in a word processor? You separate
 them with <code>enter</code>.</p>
-<p>Paragraphs:</p>
+<p>Rules for Paragraphs:</p>
 <ul>
 <li>One or several lines of text becomes a single paragraph</li>
 <li>A blank line separates paragraphs.</li>
