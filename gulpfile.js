@@ -12,6 +12,7 @@ const minifyCSS = require('gulp-minify-css')
 
 const globMarkdown = ['./**/*.md', '!./node_modules/**'];
 
+/*
 const mdWatcher = gulp.watch(globMarkdown, ['md'])
 
 mdWatcher.on('change', ({path}, stat)=>{
@@ -19,6 +20,8 @@ mdWatcher.on('change', ({path}, stat)=>{
     console.log(stdout)
   })
 })
+*/
+
 
 gulp.watch('css/**/*.css', ['css'])
 
