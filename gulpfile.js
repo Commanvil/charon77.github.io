@@ -17,15 +17,32 @@ const minifyCSS = require('gulp-minify-css')
 const globMarkdown = ['./**/*.md', '!./node_modules/**'];
 
 
-/*
 const mdWatcher = gulp.watch(globMarkdown, ['md'])
 
-mdWatcher.on('change', ({path}, stat)=>{
-  child_process.execFile('./node_modules/write-good/bin/write-good.js', [path], (error, stdout, stderr)=>{
+//mdWatcher.on('change', ({path}, stat)=>{
+  //run_and_print('./node_modules/write-good/bin/write-good.js', path)
+//})
+
+
+const htmlWatcherFromMd = gulp.watch('./**/*.md')
+htmlWatcherFromMd.on('change', ({path: filePath}, stat)=>{
+  // Changes extension to .html
+  let pathObj = path.parse(filePath)
+  pathObj.ext = '.html'
+  pathObj.base = null // Obey .ext
+  let htmlPath = path.format(pathObj)
+  run_and_print('./node_modules/readability-checker/lib/readability.js', htmlPath)
+})
+
+
+
+function run_and_print(fname, path) {
+  child_process.execFile(fname, [path], (error, stdout, stderr)=>{
+    console.log(path)
+    console.log(stderr)
     console.log(stdout)
   })
-})
-*/
+}
 
 gulp.watch(globMarkdown, ['md'])
 gulp.watch('css/**/*.css', ['css'])

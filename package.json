@@ -35,6 +35,7 @@
     "gulp-wrapper": "^1.0.0",
     "gulp-write-good": "^1.0.0",
     "pygmentize-bundled": "^2.3.0",
+    "readability-checker": "^0.2.1",
     "remarkable": "^1.7.1"
   }
 }
