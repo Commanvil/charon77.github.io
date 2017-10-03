@@ -28,7 +28,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-flatten": "^0.3.1",
     "gulp-minify-css": "^1.2.4",
-    "gulp-remarkable": "^1.1.2",
+    "gulp-remarkable": "github:charon77/gulp-remarkable",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-tap": "^1.0.1",
@@ -36,6 +36,7 @@
     "gulp-write-good": "^1.0.0",
     "pygmentize-bundled": "^2.3.0",
     "readability-checker": "^0.2.1",
-    "remarkable": "^1.7.1"
+    "remarkable": "^1.7.1",
+    "slug": "^0.9.1"
   }
 }

@@ -10,7 +10,7 @@ const replace = require('gulp-replace')
 const path = require('path')
 const pygmentize = require('pygmentize-bundled')
 const deasync = require('deasync')
-
+const slug = require('slug')
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-minify-css')
 
@@ -70,7 +70,14 @@ gulp.task('md', function(){
   
   return gulp.src(globMarkdown)
     //.pipe(markdown(opts))
-    .pipe(markdown(opts))
+    .pipe(markdown(opts, (md=>{
+      md.renderer.rules.heading_open = headingAnchorRendererPlugin
+      //md.use(headingAnchorRendererPlugin)
+      //console.log(md.renderer.rules.heading_open.toString())
+      //console.log(md.inline.ruler)
+      
+      //md.renderer.rules.push("headingAnchor", headingAnchorRendererPlugin)
+    })))
     
     .pipe(wrapper({
       header: '<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="@style.min.css"/></head><body>',
@@ -85,6 +92,16 @@ gulp.task('md', function(){
 
 
 gulp.task('default', [ 'md', 'css' ]);
+
+function headingAnchorRendererPlugin(tokens, idx ) {
+
+  if (tokens[idx+1].type == 'inline') {
+    let heading_anchor = slug(tokens[idx+1].content, {lower: true})
+    return '<h' + tokens[idx].hLevel + ' id="' + heading_anchor + '">';
+  }
+  return '<h' + tokens[idx].hLevel + '>';
+
+}
 
 function relativePathReplace (fileName) {
 
