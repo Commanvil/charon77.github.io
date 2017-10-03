@@ -22,7 +22,7 @@ mdWatcher.on('change', ({path}, stat)=>{
 })
 */
 
-
+gulp.watch(globMarkdown, ['md'])
 gulp.watch('css/**/*.css', ['css'])
 
 

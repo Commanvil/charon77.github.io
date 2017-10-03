@@ -17,15 +17,13 @@ or configuring Blogspot, and **more** on _actually_ writing content?
 
 ##### If you can write in Notepad, you can make a blog.
 
-And I'm going to show how with all of you right now.
-
 In this article you'll learn:
-- What is Markdown, and how it makes anything easier
+- What is Markdown, and how it makes making blogs and general writing easier
 - How to write in Markdown (it's very easy, I promise.)
 
 In the next article, you will also learn
 how to publish websites for free with Github, so that
-you can share the link to everyone else in the world! _(coming soon)_
+you can share with everyone! _(coming soon)_
 
 ###### Table of Contents
 
@@ -52,15 +50,19 @@ You wanted to write something that people can share on Facebook, you want
 to put pictures in it, and you need to be able to write it anywhere
 you bring your computers to.
 
-For some of you _tech savvy_ readers, you might just write in **HTML** and **CSS**.
+You want to write a blog. But you don't know how to make a website.
+
+Some of you _tech savvy_ readers, might say, well, we can write websites
+with _HTML_ and _CSS_.
+
 But what if, maybe, you don't know how to write in HTML? Maybe you
 don't have time to learn it, and to be fair, HTML is _kind of_ complicated. Some
-even argue: **CSS is the worst**.
+even argue: _CSS is the worst_.
 
-But here's the deal. If you have no idea what **HTML** and **CSS**
+Here's the deal. Even if you have no idea what _HTML_ and _CSS_
 are, don't worry, we won't be needing them.
 
-###### To reiterate: with Markdown, we can finally spend more time **actually** writing content.
+###### To reiterate: with Markdown, we can finally spend more time _actually_ writing content.
 
 
 #### How does Markdown do anything differently?
@@ -82,12 +84,11 @@ you view it on a browser (like Firefox) or using text editor (like Notepad).
 
 ![surprised kitty](/img/stock/stock-photo-portrait-of-a-surprised-cat-scottish-straight-closeup-isolated-on-white-background-499196506.jpg "Rawrr")
 
-With Markdown, you can see a website _nicely_ even with just a text browser.
+With Markdown, you can see a website _nicely_ even with just a text editor.
 This is _sooooooo_ unlike HTML, which looks gibberish to the untrained eyes.
 
 Today, people favor Markdown for its readability (when viewed as a plain text)
-and its simplicity. This allows even visitors that uses ancient PCs for _surfing the web_ to access
-our website.
+and its simplicity. This allows even visitors that uses ancient PCs for _surfing the web_ to access your website.
 
 Let's take a look at a couple of examples.
 
@@ -121,7 +122,7 @@ to present. Computers, on the other hand, will happily format them for you.
 It's not a problem until you realize that _you too_ have to read and **write** in
 HTML. Even web developers have trouble reading long lines of HTML.
 
-Now, let's compare it with Markdown, using the same content.
+Now, let's compare it with **Markdown**, using the same content.
 
 ```
 Markdown
@@ -149,9 +150,14 @@ doubt even first-timers would have no difficulties understanding
 what the document is about.
 
 That being said, Markdown is **not** a replacement for HTML, rather a
-_teeny-tiny_ subset of it. However for most people that needs to write,
+_teeny-tiny_ subset of it. Behind the scene, these Markdown documents
+are converted to HTML. However for most people that needs to write,
 Markdown is enough, and you don't need sophisticated tools to understand
 its content.
+
+**Tips: If you're already familiar with HTML, you could put normal
+HTML inside Markdown, just note that you cannot have a markdown syntax
+inside the HTML tags (they won't get processed).**
 
 Getting Started
 ---------------
