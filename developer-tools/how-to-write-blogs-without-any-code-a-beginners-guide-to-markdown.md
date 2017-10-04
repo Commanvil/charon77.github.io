@@ -3,7 +3,7 @@ How to write blogs without any code: A Beginner’s guide to Markdown
 
 ![mug and laptop](/img/stock/pexels-photo-597331.jpeg)
 
-_Back to [Index](../index.html#-markdown-markdown-html-)_
+_Back to [Index](../index.html)_
 
 > #### Fill a Survey?
 > 
