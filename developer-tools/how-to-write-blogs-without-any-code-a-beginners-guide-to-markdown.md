@@ -364,6 +364,11 @@ empty line that comes before it.
 > This sentence sits on a new paragraph, because of the
 > empty line that comes before it.
 
+You can make texts in _italic_ by surrounding them in either one asterisk: `*italic text*`
+or underscore: `_also italic text_`.
+
+To make texts in **bold**, use two of them, either `**this way**` or `__this way__`.
+
 It's that easy!
 
 Links
