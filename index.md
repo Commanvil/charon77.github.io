@@ -20,8 +20,8 @@ Table of Contents
 This section hosts tools that make job as a developer easier.
 This includes tools that 'we can live without but are nicer to have'.
 
-#### [(in progress) Git - The Ultimate Undo Tool for Collaborative Projects](developer_tools/git.html)
-#### [Markdown - Spend More Time on Writing, Not Formatting](developer_tools/markdown.html)
+#### [(in progress) Git - The Ultimate Undo Tool for Collaborative Projects](developer-tools/git.html)
+#### [How to write blogs without any code: A Beginner’s guide to Markdown](developer-tools/how-to-write-blogs-without-any-code-a-beginners-guide-to-markdown.html)
 
 
 About the Author
