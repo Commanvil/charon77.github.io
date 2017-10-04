@@ -5,6 +5,23 @@ How to write blogs without any code: A Beginner’s guide to Markdown
 
 _Back to [Index](../index.html#-markdown-markdown-html-)_
 
+> #### Fill a Survey?
+> 
+> Hi! Since this website is in beta, it will be _really_ helpful
+> If you would partake in [this survey][pre-test].
+> It won't take more than
+> 3 minutes, I promise!
+>
+> **Before** continuing with this article, please take the survey
+> if you have time.
+>
+> Click this link to **[take the survey][pre-test]**.
+> (no sign-in required!)
+
+[pre-test]: https://goo.gl/forms/YGGdgZbmXMwHsmMw1
+
+--------------------------------------------------------------------
+
 Have you ever wanted to make a blog?
 
 We all do. Yet, making websites is not for everyone. Some of you
@@ -568,6 +585,18 @@ Please note that language support depends on the highlighting engine
 being used. If supported, the engine turns codes into the display format,
 for example HTML in its "prettified" form. CSS is usually added so that
 the browser shows the code in colors.
+
+> #### One more Survey?
+> **Before** leaving, please take some time to [take the post-test][post-test],
+> **even** if you have not taken the pre-test. This will take
+> approximately 3 minutes to complete.
+>
+> Your contribution helps the author to further create
+> more articles for you!
+>
+> **[Take the post-test][post-test]**
+
+[post-test]: https://goo.gl/forms/8bKkjzanPgM0MtpE2
 
 Conclusion
 ----------
