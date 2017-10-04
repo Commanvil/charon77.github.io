@@ -34,6 +34,7 @@
     "gulp-tap": "^1.0.1",
     "gulp-wrapper": "^1.0.0",
     "gulp-write-good": "^1.0.0",
+    "ogp-meta": "^0.1.9",
     "pygmentize-bundled": "^2.3.0",
     "readability-checker": "^0.2.1",
     "remarkable": "^1.7.1",

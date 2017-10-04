@@ -75,13 +75,14 @@ gulp.task('md', function(){
     })))
     
     .pipe(wrapper({
-      header: '<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="@style.min.css"/></head><body>',
+      header: '<!DOCTYPE html><html><head><meta charset="utf-8"/>!insertMeta<meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="@style.min.css"/></head><body>',
       footer: '</body></html>\n'
       
     }))
     
     .pipe(replace('@style.min.css', relativePathReplace('style.min.css')))
     .pipe(replace('/img/stock', relativePathReplace('img/stock')))
+    .pipe(replace('!insertMeta', insertMeta))
     .pipe(gulp.dest('.'))
 });
 
@@ -95,6 +96,28 @@ function headingAnchorRendererPlugin(tokens, idx ) {
     return '<h' + tokens[idx].hLevel + ' id="' + heading_anchor + '">';
   }
   return '<h' + tokens[idx].hLevel + '>';
+
+}
+
+function insertMeta() {
+  let file = this.file
+
+  let pathObj = path.parse(file.path)
+
+  pathObj.base = null
+  pathObj.ext = ".meta.js"
+
+  let metaJsPath = path.format(pathObj)
+
+  try {
+    let metaJs = require(metaJsPath)
+    return metaJs()
+  } catch (e) {
+    if (e.name != "Error") // Print only error is not caused by missing .meta.js
+    {
+      console.error(e)
+    }
+  }
 
 }
 
