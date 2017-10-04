@@ -63,6 +63,7 @@ gulp.task('md', function(){
   const opts = {
     remarkableOptions: {
         typographer: true,
+        html: true,
         highlight: highlighter
     }
 
