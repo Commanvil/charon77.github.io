@@ -2,7 +2,9 @@
 <meta property="og:title" content="How to write blogs without any code: A Beginner’s guide to Markdown" />
 <meta property="og:url" content="http://charon77.github.io/developer-tools/how-to-write-blogs-without-any-code-a-beginners-guide-to-markdown.html" />
 <meta property="og:type" content="article" />
-<meta property="og:description" content="Making websites is not for everyone. Some of you might already be using Wordpress or Blogspot. But they do come with their own cost: they’re a bit tricky to configure, and they’re an overkill if all you need is writing content. What if you want to spend less time setting up Wordpress, or configuring Blogspot, and more on actually writing content?"/>
+<meta property="og:description" content="Making websites is not for everyone. Some of you might already be using Wordpress or Blogspot. But they do come with their own cost: they’re a bit tricky to configure, and they’re an overkill if all you need is writing content.
+
+What if you want to spend less time setting up Wordpress, or configuring Blogspot, and more on actually writing content?"/>
 
 How to write blogs without any code: A Beginner’s guide to Markdown
 ===================================================================
