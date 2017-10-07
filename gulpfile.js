@@ -13,6 +13,7 @@ const deasync = require('deasync')
 const slug = require('slug')
 const concat = require('gulp-concat')
 const minifyCSS = require('gulp-minify-css')
+const sitemap = require('gulp-sitemap')
 
 const globMarkdown = ['./**/*.md', '!./node_modules/**'];
 
@@ -87,7 +88,17 @@ gulp.task('md', function(){
 });
 
 
-gulp.task('default', [ 'md', 'css' ]);
+gulp.task('default', [ 'md', 'css' , 'sitemap']);
+
+gulp.task('sitemap', ['md'], function () {
+    gulp.src(['./**/*.html', '!./node_modules/**', '!./schedule/**'], {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'http://charon77.github.io'
+        }))
+        .pipe(gulp.dest('.'));
+});
 
 function headingAnchorRendererPlugin(tokens, idx ) {
 

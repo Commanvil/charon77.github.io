@@ -31,6 +31,7 @@
     "gulp-remarkable": "github:charon77/gulp-remarkable",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
+    "gulp-sitemap": "^4.2.0",
     "gulp-tap": "^1.0.1",
     "gulp-wrapper": "^1.0.0",
     "gulp-write-good": "^1.0.0",
