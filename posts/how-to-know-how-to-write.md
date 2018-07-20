@@ -1,7 +1,7 @@
 How to know how to write
 ========================
 
-[date]: <> (2018-07-20T08:38:06.329Z)
+<!-- 2018-07-20T08:38:06.329Z -->
 
 ![notebook and pen](/img/stock/pexels-fashion-woman-notebook-pen-34072.jpg)
 
