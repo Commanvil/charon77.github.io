@@ -273,7 +273,7 @@ The quick brown fox jumps over the lazy dog.
 
 *Note: in some parser, the line below the heading must not be shorter
 than the text. This demonstrates what happens when this is violated.
-Even though it appears well here, it's use is discouraged. Besides, it
+Even though it appears well here, its use is discouraged. Besides, it
 looks bad.
 ```
 
