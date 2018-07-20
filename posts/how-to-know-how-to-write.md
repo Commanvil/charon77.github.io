@@ -66,7 +66,7 @@ If you've read my post about
 you'll see that I've included cat pictures. Well, I guess too many of them
 _does_ hurt. By the way I got the pictures (like the one on the top)
 from www.pexels.com. They offer high quality license-free images so
-definitely check it out! Alternatively, you could go to Google Image,
+definitely check it out! Alternatively, you could go to Google Images,
 DeviantArt, etc, but _please_ make sure you're **allowed** to use that image.
 Some images are copyrighted and should not be used unless you got written
 permission from said author.
@@ -90,7 +90,7 @@ blogs.
 
 ## Making it a habit
 
-Now that you've reached here, you should already familiar on what to write, how
+Now that you've reached here, you should already be familiar on what to write, how
 to get images, links, etc. But making blog-writing a habit is a _totally_
 different challenge.
 
@@ -102,12 +102,12 @@ When I was young, coffee was a stranger to me. I knew it existed, but I don't
 drink coffee _regularly_ until I do. And when I do, I do.
 
 It sounds weird, but to me, habit is something that you do regularly until you
-totally forgot about it. At first, writing blog posts looks like a chore, but
+totally forget about it. At first, writing blog posts look like a chore, but
 once you are _used_ to it, it's like how you unconsciously post your meal on
 Instagram.
 
 ... At least, that's what I hope. I am **NOT** there yet. I still struggle to
-write my blog posts. Heck, this is like my third post, so what do I know?
+write my blog posts. Heck, this is like my third post, so what **do** I know?
 
 So I went to Google
 
