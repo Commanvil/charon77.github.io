@@ -148,7 +148,7 @@ article says that you don't automatically stop writing for the rest of your life
 if you skip a day or two doing the things you enjoy. You'll eventually get back
 to it.
 
-Hopefully this lessons encourages you to write more. It ain't easy, but we'll
+Hopefully this lesson encourages you to write more. It ain't easy, but we'll
 get to it.
 
 [**Click to see Comments**](https://github.com/Charon77/charon77.github.io/issues/2)
