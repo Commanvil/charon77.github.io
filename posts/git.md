@@ -31,7 +31,7 @@ As your project scales, things are getting more difficult. You now start working
 in a team of five people, per se. Each of them work on different parts of the project.
 For instance, one person could person on one particular feature of an app, corresponding
 to several files, while the others could be working on different files. Sometimes, several
-people could be editing different or even same part of a single file, like the main page of
+people could be editing different or even same parts of a single file, like the main page of
 a mobile app, or the css of a website.
 
 We need some sort of system that could:
