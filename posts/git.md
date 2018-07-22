@@ -6,10 +6,10 @@ _Back to [Index](../index.html#-markdown-markdown-html-)_
 Collaborating codes can be hard, and while using flashdrives to 
 copy codes can work, there are lots of concerns, like: what if
 we accidentally overwrite someone else's work? What if our work
-produces bugs we don't realize until later on? Can we rework our
+produce bugs we don't realize until later on? Can we rework our
 steps to fix the bugs?
 
-This section serves as a primer to Git, what is it, how to use it,
+This section serves as a primer to Git, what it is, how it's used,
 when and why should you use Git.
 
 Even as a solo developer, you should still consider working with Git
@@ -25,11 +25,11 @@ When you work alone, writing software, all you need to do is write the code,
 compile it, and run it, and you're set. But what if you are working in a team?
 How do you share what you're typing with others? Do you send your code by email?
 Cloud storage? What if there's a mistake that happens later on in the project's lifespan,
-can we figure out what introduces the bug, and even who to _blame_?
+can we figure out what introduces the bug, or even who to _blame_?
 
-As your project scales, things are getting more difficult. You now start working
+As your project scales, things get more difficult. You now start working
 in a team of five people, per se. Each of them work on different parts of the project.
-For instance, one person could person on one particular feature of an app, corresponding
+For instance, one person could work on one particular feature of an app, corresponding
 to several files, while the others could be working on different files. Sometimes, several
 people could be editing different or even same part of a single file, like the main page of
 a mobile app, or the css of a website.
